@@ -1,0 +1,466 @@
+<!DOCTYPE html><html lang="fa" dir="rtl" data-astro-cid-tldeq5d5><head><!-- Prevent theme flash before first paint --><script>
+	(function () {
+		try {
+			var stored = localStorage.getItem('theme');
+			var theme =
+				stored === 'light' || stored === 'dark'
+					? stored
+					: window.matchMedia('(prefers-color-scheme: dark)').matches
+						? 'dark'
+						: 'light';
+			document.documentElement.setAttribute('data-theme', theme);
+		} catch (e) {
+			document.documentElement.setAttribute('data-theme', 'light');
+		}
+	})();
+</script><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" href="/favicon.ico"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="فرید کرمی" href="https://faridkarami.ir/rss.xml"><meta name="generator" content="Astro v7.2.9"><style>@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/65139d19f640333b.ttf") format("truetype");font-display:swap;font-weight:100;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/1596465ad06f66b8.ttf") format("truetype");font-display:swap;font-weight:200;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/49f5e1cfe7c7b5da.ttf") format("truetype");font-display:swap;font-weight:300;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/4960ffc0cf26ac45.ttf") format("truetype");font-display:swap;font-weight:400;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/8a52d37c17ac8dff.ttf") format("truetype");font-display:swap;font-weight:500;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/11fd06a0899e79b6.ttf") format("truetype");font-display:swap;font-weight:600;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/52d21d992a440ab4.ttf") format("truetype");font-display:swap;font-weight:700;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/3617fcaaca357b50.ttf") format("truetype");font-display:swap;font-weight:800;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/a1f1f02040c6e35b.ttf") format("truetype");font-display:swap;font-weight:900;font-style:normal;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:100;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:200;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:300;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:400;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:500;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:600;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial Bold";src:local("Arial Bold");font-display:swap;font-weight:700;font-style:normal;size-adjust:112.5046%;ascent-override:122.1284%;descent-override:65.5973%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial Bold";src:local("Arial Bold");font-display:swap;font-weight:800;font-style:normal;size-adjust:112.5046%;ascent-override:122.1284%;descent-override:65.5973%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial Bold";src:local("Arial Bold");font-display:swap;font-weight:900;font-style:normal;size-adjust:112.5046%;ascent-override:122.1284%;descent-override:65.5973%;line-gap-override:0%;}:root{--font-primary:Primary-c1310e4828f8d8fc,"Primary-c1310e4828f8d8fc fallback: Arial","Primary-c1310e4828f8d8fc fallback: Arial Bold",system-ui,sans-serif;}</style><link rel="preload" href="/assets/fonts/65139d19f640333b.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/1596465ad06f66b8.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/49f5e1cfe7c7b5da.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/4960ffc0cf26ac45.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/8a52d37c17ac8dff.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/11fd06a0899e79b6.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/52d21d992a440ab4.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/3617fcaaca357b50.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/a1f1f02040c6e35b.ttf" as="font" type="font/ttf" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://faridkarami.ir/blog/memory-card-repair/"><!-- Primary Meta Tags --><title> تعمیر مشکلات مموری، کارت حافظه و فلش</title><meta name="description" content="تعمیر مشکلات مموری، کارت حافظه و فلش؛ راهنمای کامل رفع خطا و فرمت در ویندوز"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://faridkarami.ir/blog/memory-card-repair/"><meta property="og:title" content=" تعمیر مشکلات مموری، کارت حافظه و فلش"><meta property="og:description" content="تعمیر مشکلات مموری، کارت حافظه و فلش؛ راهنمای کامل رفع خطا و فرمت در ویندوز"><meta property="og:image" content="https://faridkarami.ir/assets/default.3rEwbyG8.jpg"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><script type="module">function e(){let e=document.querySelectorAll(`a`),t=window.location.hostname;e.forEach(e=>{let n=e.getAttribute(`href`);if(n&&(n.startsWith(`http://`)||n.startsWith(`https://`)||n.startsWith(`//`)))try{new URL(n,window.location.href).hostname!==t&&(e.setAttribute(`target`,`_blank`),e.setAttribute(`rel`,`noopener noreferrer`))}catch{}})}e();</script><link rel="stylesheet" href="/assets/BaseHead.CfFMrezF.css"><link rel="stylesheet" href="/assets/Header.DSs-BPy5.css"><style>main[data-astro-cid-tldeq5d5]{width:calc(100% - 2em);max-width:100%;margin:0 auto}.hero-image[data-astro-cid-tldeq5d5]{width:100%}.hero-image[data-astro-cid-tldeq5d5] img[data-astro-cid-tldeq5d5]{box-shadow:var(--box-shadow);border-radius:12px;margin:0 auto;display:block}.prose[data-astro-cid-tldeq5d5]{width:1200px;max-width:calc(100% - 2em);color:rgb(var(--text));margin:auto;padding:1em}.title[data-astro-cid-tldeq5d5]{text-align:center;margin-bottom:1em;padding:1em 0;line-height:1}.title[data-astro-cid-tldeq5d5] h1[data-astro-cid-tldeq5d5]{margin:0 0 .5em}.date[data-astro-cid-tldeq5d5]{color:rgb(var(--text-muted));margin-bottom:.5em}.last-updated-on[data-astro-cid-tldeq5d5]{font-style:italic}
+</style></head><body data-astro-cid-tldeq5d5><header data-astro-cid-nen7h5rs><nav data-astro-cid-nen7h5rs><h2 data-astro-cid-nen7h5rs><a href="/" data-astro-cid-nen7h5rs>فرید کرمی</a></h2><div class="internal-links desktop-only" data-astro-cid-nen7h5rs><a href="/" data-astro-cid-nen7h5rs="true">صفحه اصلی</a><a href="/blog" class="active" data-astro-cid-nen7h5rs="true">بلاگ</a><a href="/courses" data-astro-cid-nen7h5rs="true">دوره های آموزشی</a><a href="/about" data-astro-cid-nen7h5rs="true">درباره من</a></div><div class="nav-end" data-astro-cid-nen7h5rs><div class="social-links desktop-only" data-astro-cid-nen7h5rs><a href="https://www.linkedin.com/in/faridkarami" target="_blank" rel="noopener noreferrer" data-astro-cid-nen7h5rs><span class="sr-only" data-astro-cid-nen7h5rs>Follow me on Linkedin</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="22" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-nen7h5rs="true" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://github.com/faridkarami" target="_blank" rel="noopener noreferrer" data-astro-cid-nen7h5rs><span class="sr-only" data-astro-cid-nen7h5rs>Go to my GitHub repo</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="22" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-nen7h5rs="true" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><a href="https://www.youtube.com/channel/UCynzTyn5LaMJBS_wI0AT0sA" target="_blank" rel="noopener noreferrer" data-astro-cid-nen7h5rs><span class="sr-only" data-astro-cid-nen7h5rs>Watch my channel on Youtube</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="22" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-nen7h5rs="true" class="lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a></div><details class="mobile-only dropdown" data-astro-cid-nen7h5rs><summary aria-label="منوی موبایل" data-astro-cid-nen7h5rs><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="22" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-nen7h5rs="true" class="lucide lucide-menu"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></summary><div class="dropdown-content" data-astro-cid-nen7h5rs><a href="/" data-astro-cid-nen7h5rs="true">صفحه اصلی</a><a href="/blog" class="active" data-astro-cid-nen7h5rs="true">بلاگ</a><a href="/courses" data-astro-cid-nen7h5rs="true">دوره های آموزشی</a><a href="/about" data-astro-cid-nen7h5rs="true">درباره من</a></div></details><button class="theme-toggle" type="button" data-theme-toggle aria-label="تغییر حالت روشن و تاریک" data-astro-cid-l6lhmie6><span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true" data-astro-cid-l6lhmie6><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="18" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-l6lhmie6="true" class="lucide lucide-sun"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></span><span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true" data-astro-cid-l6lhmie6><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="18" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-l6lhmie6="true" class="lucide lucide-moon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></span></button><script type="module">var e=`theme`,t=()=>{let t=localStorage.getItem(e);return t===`light`||t===`dark`?t:window.matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`},n=t=>{document.documentElement.setAttribute(`data-theme`,t),localStorage.setItem(e,t),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{let n=t===`dark`?`فعال کردن حالت روشن`:`فعال کردن حالت تاریک`;e.setAttribute(`aria-label`,n),e.setAttribute(`aria-pressed`,String(t===`dark`))})},r=()=>{n((document.documentElement.getAttribute(`data-theme`)===`dark`?`dark`:`light`)==`dark`?`light`:`dark`)};n(t()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,r)}),window.matchMedia(`(prefers-color-scheme: dark)`).addEventListener(`change`,t=>{localStorage.getItem(e)||n(t.matches?`dark`:`light`)});</script></div></nav></header><main data-astro-cid-tldeq5d5><article data-astro-cid-tldeq5d5><div class="hero-image" data-astro-cid-tldeq5d5><img src="/assets/memory-card-repair.DYnRvMnI_18oVb2.webp" alt data-astro-cid-tldeq5d5="true" loading="lazy" decoding="async" width="1020" height="510"></div><div class="prose" data-astro-cid-tldeq5d5><div class="title" data-astro-cid-tldeq5d5><div class="date" data-astro-cid-tldeq5d5><time datetime="2015-04-30T19:30:00.000Z">۱۱ اردیبهشت ۱۳۹۴</time><!-- export const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric',
+}); --><!-- en-us --></div><h1 data-astro-cid-tldeq5d5> تعمیر مشکلات مموری، کارت حافظه و فلش</h1><hr data-astro-cid-tldeq5d5></div><p>اگر فلش، کارت حافظه یا مموری گوشی شما توسط کامپیوتر شناسایی نمی شود، فرمت نمی شود، فایل سیستم آن به صورت <code>RAW</code> نمایش داده می شود یا هنگام فرمت کردن خطا می دهد، لزوما به این معنی نیست که حافظه کاملا خراب شده است.</p>
+<p>در بسیاری از مواقع مشکل با چند دستور ساده در ویندوز قابل حل است.</p>
+<p>در این راهنما، رایج ترین مشکلات فلش، کارت حافظه و microSD را بررسی می کنیم و مرحله به مرحله روش تعمیر آنها را توضیح می دهیم.</p>
+<blockquote>
+<p><strong>هشدار:</strong> بعضی از روش های این مقاله باعث حذف کامل اطلاعات می شوند. اگر فایل های داخل حافظه برای شما مهم هستند، قبل از اجرای دستورات تعمیر، سراغ فرمت و DiskPart نروید و ابتدا اطلاعات را ریکاوری کنید.</p>
+</blockquote>
+<hr>
+<h2 id="1-چرا-فلش-یا-مموری-خراب-می-شود">1. چرا فلش یا مموری خراب می شود؟</h2>
+<p>خرابی حافظه می تواند دلایل مختلفی داشته باشد. مهم ترین آنها عبارتند از:</p>
+<ul>
+<li>خارج کردن فلش یا کارت حافظه هنگام انتقال اطلاعات</li>
+<li>قطع شدن برق هنگام نوشتن اطلاعات</li>
+<li>خرابی فایل سیستم</li>
+<li>استفاده از کارت حافظه بی کیفیت</li>
+<li>پر شدن کامل حافظه</li>
+<li>خرابی سلول های حافظه</li>
+<li>خرابی کنترلر داخلی فلش یا کارت</li>
+<li>خرابی یا ناسازگاری Card Reader</li>
+<li>ویروس یا بدافزار</li>
+<li>استفاده مداوم و سنگین از کارت حافظه</li>
+<li>ریکاوری اطلاعات با نرم افزارهای تخصصی</li>
+<li>آسیب فیزیکی یا آب خوردگی</li>
+<li>استفاده از کارت حافظه تقلبی با ظرفیت غیر واقعی</li>
+</ul>
+<p>بنابراین باید ابتدا مشخص کنیم مشکل نرم افزاری است یا سخت افزاری.</p>
+<hr>
+<h2 id="2-اولین-قدم-آیا-ویندوز-حافظه-را-می-شناسد">2. اولین قدم: آیا ویندوز حافظه را می شناسد؟</h2>
+<p>فلش یا کارت حافظه را به کامپیوتر وصل کنید.</p>
+<p>اگر در This PC نمایش داده می شود، مشکل معمولا ساده تر است.</p>
+<p>اما اگر نمایش داده نمی شود، وارد Disk Management شوید.</p>
+<p>کلیدهای زیر را فشار دهید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Win + X</span></span></code></pre>
+<p>سپس:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Disk Management</span></span></code></pre>
+<p>را انتخاب کنید.</p>
+<p>در این قسمت باید دنبال حافظه خودتان بگردید.</p>
+<p>ممکن است حافظه با یکی از این وضعیت ها نمایش داده شود:</p>
+<ul>
+<li>RAW</li>
+<li>Unallocated</li>
+<li>Healthy</li>
+<li>No Media</li>
+<li>بدون Drive Letter</li>
+<li>ظرفیت اشتباه</li>
+<li>ظرفیت درست ولی بدون پارتیشن</li>
+</ul>
+<p>هر کدام از این حالت ها معنی متفاوتی دارد.</p>
+<hr>
+<h2 id="3-مشکل-raw-چیست">3. مشکل RAW چیست؟</h2>
+<p>اگر فایل سیستم حافظه به صورت <code>RAW</code> نمایش داده شود، یعنی ویندوز نمی تواند فایل سیستم آن را به شکل معمول تشخیص دهد.</p>
+<p>برای مثال ممکن است در Disk Management ببینید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>28 GB</span></span>
+<span class="line"><span>RAW</span></span>
+<span class="line"><span>Healthy</span></span></code></pre>
+<p>در این حالت معمولا اطلاعات قبلی قابل استفاده نیستند.</p>
+<p>اگر اطلاعات برایتان مهم نیست، می توانیم پارتیشن را پاک کرده و دوباره بسازیم.</p>
+<p>اما اگر اطلاعات مهم هستند، نباید بلافاصله Format کنید.</p>
+<hr>
+<h2 id="4-اگر-اطلاعات-مهم-نیست-بهترین-روش-چیست">4. اگر اطلاعات مهم نیست، بهترین روش چیست؟</h2>
+<p>اگر هیچ فایلی روی فلش یا کارت حافظه برای شما مهم نیست، یکی از بهترین روش ها استفاده از ابزار داخلی Windows یعنی DiskPart است.</p>
+<p>برای اجرای آن:</p>
+<ol>
+<li>Start را باز کنید.</li>
+<li>عبارت <code>cmd</code> را جستجو کنید.</li>
+<li>روی Command Prompt راست کلیک کنید.</li>
+<li>گزینه Run as administrator را انتخاب کنید.</li>
+</ol>
+<p>سپس بنویسید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#F97583">diskpart</span></span></code></pre>
+<hr>
+<h2 id="5-پیدا-کردن-شماره-فلش-یا-مموری">5. پیدا کردن شماره فلش یا مموری</h2>
+<p>بعد از ورود به DiskPart دستور زیر را اجرا کنید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">list disk</span></span></code></pre>
+<p>مثلا ممکن است چنین چیزی ببینید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Disk ###  Status         Size</span></span>
+<span class="line"><span>--------  -------------  -------</span></span>
+<span class="line"><span>Disk 0    Online          465 GB</span></span>
+<span class="line"><span>Disk 1    Online          447 GB</span></span>
+<span class="line"><span>Disk 2    Online          232 GB</span></span>
+<span class="line"><span>Disk 3    Online           28 GB</span></span></code></pre>
+<p>در این مثال، کارت حافظه 28GB برابر با <code>Disk 3</code> است.</p>
+<h3 id="بسیار-مهم">بسیار مهم</h3>
+<p>قبل از انتخاب Disk مطمئن شوید شماره مربوط به فلش یا کارت حافظه است.</p>
+<p>مثلا اگر هارد کامپیوتر شما 465GB است:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Disk 0    465 GB</span></span></code></pre>
+<p>نباید به اشتباه آن را انتخاب کنید.</p>
+<p>انتخاب Disk اشتباه و اجرای <code>clean</code> می تواند اطلاعات یک هارد دیگر را از بین ببرد.</p>
+<hr>
+<h2 id="6-پاک-کردن-پارتیشن-خراب">6. پاک کردن پارتیشن خراب</h2>
+<p>اگر مطمئن شدید که Disk 3 کارت حافظه شماست:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">select disk </span><span style="color:#79B8FF">3</span></span></code></pre>
+<p>باید پیام زیر را ببینید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Disk 3 is now the selected disk.</span></span></code></pre>
+<p>حالا:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">clean</span></span></code></pre>
+<p>اگر پیام زیر را دیدید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>DiskPart succeeded in cleaning the disk.</span></span></code></pre>
+<p>یعنی اطلاعات پارتیشن بندی قبلی پاک شده است.</p>
+<p>در این مرحله حافظه عملا بدون پارتیشن است.</p>
+<hr>
+<h2 id="7-اگر-create-partition-کار-نکرد-چه-کنیم">7. اگر Create Partition کار نکرد چه کنیم؟</h2>
+<p>در حالت عادی بعد از <code>clean</code> باید بتوانیم این دستور را اجرا کنیم:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">create partition primary</span></span></code></pre>
+<p>اما ممکن است با خطایی مانند این مواجه شوید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>No usable free extent could be found.</span></span></code></pre>
+<p>یا:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>The object is not found.</span></span></code></pre>
+<p>این خطا به این معنی نیست که حتما حافظه سوخته است.</p>
+<p>یکی از روش هایی که می توان امتحان کرد، مشخص کردن Offset است:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">create partition primary offset=</span><span style="color:#79B8FF">1024</span></span></code></pre>
+<p>اگر پیام زیر نمایش داده شد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>DiskPart succeeded in creating the specified partition.</span></span></code></pre>
+<p>یعنی پارتیشن با موفقیت ساخته شده است.</p>
+<p>این روش در بعضی کارت های حافظه یا فلش هایی که بعد از <code>clean</code> رفتار عادی ندارند می تواند مشکل را حل کند.</p>
+<hr>
+<h2 id="8-فرمت-کردن-پارتیشن">8. فرمت کردن پارتیشن</h2>
+<p>بعد از ساخت پارتیشن، باید آن را Format کنیم.</p>
+<p>ابتدا پارتیشن را انتخاب کنید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">select partition </span><span style="color:#79B8FF">1</span></span></code></pre>
+<p>سپس:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#F97583">format</span><span style="color:#E1E4E8"> fs=exfat quick</span></span></code></pre>
+<p>بعد از پایان Format:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">assign</span></span></code></pre>
+<p>و در نهایت:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#F97583">exit</span></span></code></pre>
+<p>حالا باید حافظه در This PC نمایش داده شود.</p>
+<hr>
+<h2 id="9-exfat-چیست-و-چرا-از-آن-استفاده-کنیم">9. exFAT چیست و چرا از آن استفاده کنیم؟</h2>
+<p>یکی از فایل سیستم های مناسب حافظه های قابل حمل <code>exFAT</code> است.</p>
+<p>مزایای exFAT:</p>
+<ul>
+<li>مناسب برای فلش</li>
+<li>مناسب برای کارت حافظه</li>
+<li>پشتیبانی از فایل های بزرگ</li>
+<li>مناسب برای فایل های چند گیگابایتی</li>
+<li>محدودیت های قدیمی FAT32 را ندارد</li>
+</ul>
+<p>برای مثال اگر بخواهید یک فایل 8GB را روی حافظه قرار دهید، FAT32 نمی تواند آن فایل را به صورت عادی ذخیره کند، اما exFAT برای چنین استفاده ای مناسب است.</p>
+<p>البته سازگاری exFAT با بعضی گوشی ها، دوربین ها، کنسول ها و دستگاه های قدیمی ممکن است متفاوت باشد.</p>
+<hr>
+<h2 id="10-اگر-گوشی-کارت-حافظه-را-نمی-شناسد">10. اگر گوشی کارت حافظه را نمی شناسد</h2>
+<p>اگر کارت حافظه در کامپیوتر شناسایی می شود ولی گوشی آن را نمی شناسد، چند مورد را بررسی کنید.</p>
+<h3 id="روش-اول-کارت-را-دوباره-جا-بزنید">روش اول: کارت را دوباره جا بزنید</h3>
+<p>گوشی را خاموش کنید، کارت را خارج کنید و دوباره نصب کنید.</p>
+<h3 id="روش-دوم-کارت-را-با-کامپیوتر-format-کنید">روش دوم: کارت را با کامپیوتر Format کنید</h3>
+<p>اگر گوشی از exFAT پشتیبانی می کند، می توانید از:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#F97583">format</span><span style="color:#E1E4E8"> fs=exfat quick</span></span></code></pre>
+<p>استفاده کنید.</p>
+<p>اما اگر گوشی قدیمی است، ممکن است FAT32 گزینه سازگارتری باشد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#F97583">format</span><span style="color:#E1E4E8"> fs=fat32 quick</span></span></code></pre>
+<p>توجه کنید که FAT32 برای فایل های بزرگ محدودیت دارد.</p>
+<hr>
+<h2 id="11-فلش-یا-مموری-در-this-pc-دیده-نمی-شود">11. فلش یا مموری در This PC دیده نمی شود</h2>
+<p>ممکن است حافظه توسط ویندوز شناسایی شده باشد اما Drive Letter نداشته باشد.</p>
+<p>مثلا در Disk Management می بینید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Healthy</span></span>
+<span class="line"><span>28 GB</span></span></code></pre>
+<p>اما در This PC چیزی وجود ندارد.</p>
+<p>در این حالت می توانید یک Drive Letter اختصاص دهید.</p>
+<p>در Disk Management:</p>
+<ol>
+<li>روی پارتیشن راست کلیک کنید.</li>
+<li>گزینه Change Drive Letter and Paths را انتخاب کنید.</li>
+<li>روی Add کلیک کنید.</li>
+<li>یک حرف مثل <code>F</code> انتخاب کنید.</li>
+</ol>
+<p>حالا حافظه باید در This PC ظاهر شود.</p>
+<hr>
+<h2 id="12-حافظه-به-صورت-unallocated-نمایش-داده-می-شود">12. حافظه به صورت Unallocated نمایش داده می شود</h2>
+<p>اگر در Disk Management چیزی شبیه این دیدید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>28 GB</span></span>
+<span class="line"><span>Unallocated</span></span></code></pre>
+<p>یعنی پارتیشن قابل استفاده ای روی حافظه وجود ندارد.</p>
+<p>اگر اطلاعات مهم نیست:</p>
+<ol>
+<li>روی فضای Unallocated راست کلیک کنید.</li>
+<li>New Simple Volume را انتخاب کنید.</li>
+<li>Next را بزنید.</li>
+<li>کل ظرفیت را انتخاب کنید.</li>
+<li>یک Drive Letter انتخاب کنید.</li>
+<li>فایل سیستم را انتخاب کنید.</li>
+<li>Format را انجام دهید.</li>
+</ol>
+<p>برای یک حافظه قابل حمل جدید، exFAT معمولا گزینه مناسبی است.</p>
+<hr>
+<h2 id="13-خطای-write-protected-یا-read-only">13. خطای Write Protected یا Read Only</h2>
+<p>یکی از مشکلات رایج این است که ویندوز می گوید حافظه Write Protected است.</p>
+<p>ابتدا DiskPart را باز کنید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#F97583">diskpart</span></span></code></pre>
+<p>سپس:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">list disk</span></span></code></pre>
+<p>حافظه را انتخاب کنید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">select disk </span><span style="color:#79B8FF">3</span></span></code></pre>
+<p>و سپس:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">attributes disk</span></span></code></pre>
+<p>اگر مقدار زیر را دیدید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Read-only : Yes</span></span></code></pre>
+<p>این دستور را اجرا کنید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">attributes disk clear readonly</span></span></code></pre>
+<p>اگر موفقیت آمیز بود، دوباره:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">attributes disk</span></span></code></pre>
+<p>را اجرا کنید و بررسی کنید که:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Read-only : No</span></span></code></pre>
+<p>باشد.</p>
+<p>بعد می توانید دوباره عملیات پارتیشن بندی را انجام دهید.</p>
+<hr>
+<h2 id="14-اگر-card-reader-مشکل-داشته-باشد">14. اگر Card Reader مشکل داشته باشد</h2>
+<p>گاهی مشکل اصلا از کارت حافظه نیست.</p>
+<p>Card Reader می تواند باعث شود:</p>
+<ul>
+<li>کارت یک بار شناسایی شود و یک بار نشود</li>
+<li>ظرفیت کارت اشتباه نمایش داده شود</li>
+<li>کارت به صورت <code>No Media</code> نمایش داده شود</li>
+<li>عملیات Format با خطا مواجه شود</li>
+<li>عملیات Partition بندی شکست بخورد</li>
+</ul>
+<p>بنابراین اگر کارت رفتار عجیبی دارد، حتما آن را با یک Card Reader دیگر امتحان کنید.</p>
+<p>اگر microSD است، می توانید آن را:</p>
+<ul>
+<li>با یک Card Reader دیگر</li>
+<li>با آداپتور دیگر</li>
+<li>یا مستقیما داخل گوشی</li>
+</ul>
+<p>امتحان کنید.</p>
+<hr>
+<h2 id="15-معنی-no-media-چیست">15. معنی No Media چیست؟</h2>
+<p>اگر DiskPart چنین چیزی نشان دهد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Disk 3    No Media    0 B</span></span></code></pre>
+<p>این حالت با RAW فرق دارد.</p>
+<p>در RAW، ویندوز حافظه را با ظرفیت واقعی می بیند ولی فایل سیستم را نمی شناسد.</p>
+<p>اما در:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>No Media</span></span>
+<span class="line"><span>0 B</span></span></code></pre>
+<p>ویندوز معمولا فقط دستگاه Reader را می بیند و نمی تواند حافظه واقعی داخل آن را در دسترس قرار دهد.</p>
+<p>اگر این حالت با چند Reader مختلف تکرار شود، احتمال خرابی سخت افزاری کارت بسیار زیاد است.</p>
+<hr>
+<h2 id="16-اگر-ظرفیت-کارت-درست-نمایش-داده-نمی-شود">16. اگر ظرفیت کارت درست نمایش داده نمی شود</h2>
+<p>مثلا کارت شما باید 32GB باشد ولی ویندوز آن را این طور نشان می دهد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>8 GB</span></span></code></pre>
+<p>یا:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>0 B</span></span></code></pre>
+<p>یا:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>No Media</span></span></code></pre>
+<p>ممکن است کارت خراب باشد.</p>
+<p>همچنین کارت های حافظه تقلبی وجود دارند که ظرفیت واقعی آنها بسیار کمتر از ظرفیتی است که روی بسته بندی نوشته شده است.</p>
+<hr>
+<h2 id="17-اگر-diskpart-می-گوید-no-usable-free-extent">17. اگر DiskPart می گوید No usable free extent</h2>
+<p>این خطا ممکن است بعد از <code>clean</code> دیده شود:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>No usable free extent could be found.</span></span></code></pre>
+<p>اگر مطمئن هستید Disk درست را انتخاب کرده اید، ابتدا:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">clean</span></span></code></pre>
+<p>را اجرا کنید.</p>
+<p>سپس می توانید این روش را امتحان کنید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">create partition primary offset=</span><span style="color:#79B8FF">1024</span></span></code></pre>
+<p>اگر موفق شد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">select partition </span><span style="color:#79B8FF">1</span></span>
+<span class="line"><span style="color:#F97583">format</span><span style="color:#E1E4E8"> fs=exfat quick</span></span>
+<span class="line"><span style="color:#E1E4E8">assign</span></span></code></pre>
+<p>اگر این روش هم جواب نداد، باید وضعیت سخت افزاری کارت و Reader بررسی شود.</p>
+<hr>
+<h2 id="18-اگر-create-partition-با-the-object-is-not-found-مواجه-شد">18. اگر Create Partition با The object is not found مواجه شد</h2>
+<p>خطای:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>The object is not found.</span></span></code></pre>
+<p>می تواند نشان دهد که Windows DiskPart نمی تواند یک پارتیشن قابل استفاده روی آن Media ایجاد کند.</p>
+<p>در این حالت این موارد را بررسی کنید:</p>
+<ol>
+<li>کارت را جدا و دوباره وصل کنید.</li>
+<li>Card Reader دیگری امتحان کنید.</li>
+<li>کارت را در گوشی امتحان کنید.</li>
+<li>دوباره <code>list disk</code> بگیرید.</li>
+<li>مطمئن شوید ظرفیت درست نمایش داده می شود.</li>
+</ol>
+<p>اگر یک بار کارت به صورت:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>28 GB Online</span></span></code></pre>
+<p>و بار دیگر:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>No Media 0 B</span></span></code></pre>
+<p>نمایش داده شود، احتمال مشکل سخت افزاری بیشتر می شود.</p>
+<hr>
+<h2 id="19-اگر-format-خطا-می-دهد">19. اگر Format خطا می دهد</h2>
+<p>اگر بعد از ساخت پارتیشن دستور زیر:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#F97583">format</span><span style="color:#E1E4E8"> fs=exfat quick</span></span></code></pre>
+<p>خطا داد، ابتدا بررسی کنید که پارتیشن را انتخاب کرده باشید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">select partition </span><span style="color:#79B8FF">1</span></span></code></pre>
+<p>بعد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#F97583">format</span><span style="color:#E1E4E8"> fs=exfat quick</span></span></code></pre>
+<p>اگر هنوز خطا وجود داشت، متن کامل خطا را بررسی کنید.</p>
+<p>خطاهای مختلف دلایل مختلفی دارند و نباید بدون توجه به پیام خطا، دستورات تصادفی اجرا کرد.</p>
+<hr>
+<h2 id="20-آیا-chkdsk-می-تواند-مموری-را-تعمیر-کند">20. آیا CHKDSK می تواند مموری را تعمیر کند؟</h2>
+<p>دستور CHKDSK برای بررسی و تعمیر فایل سیستم مناسب است، اما فقط زمانی که فایل سیستم قابل شناسایی باشد.</p>
+<p>مثلا اگر کارت شما Drive Letter <code>F</code> دارد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#F97583">chkdsk</span><span style="color:#E1E4E8"> F: /f</span></span></code></pre>
+<p>اگر فایل سیستم RAW باشد، ممکن است CHKDSK نتواند آن را تعمیر کند.</p>
+<p>در چنین شرایطی اگر اطلاعات مهم نیستند، معمولا بهتر است پارتیشن را از نو بسازید و Format کنید.</p>
+<hr>
+<h2 id="21-اگر-فایل-ها-مهم-هستند-چه-کنیم">21. اگر فایل ها مهم هستند چه کنیم؟</h2>
+<p>اگر فایل های مهمی روی کارت یا فلش دارید، قبل از Format این کارها را انجام ندهید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">clean</span></span></code></pre>
+<p>یا:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#F97583">format</span></span></code></pre>
+<p>یا:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">create partition primary</span></span></code></pre>
+<p>چون این دستورات می توانند ساختار اطلاعات را تغییر دهند و بازیابی اطلاعات را سخت تر کنند.</p>
+<p>در چنین شرایطی ابتدا باید سراغ Recovery بروید.</p>
+<hr>
+<h2 id="22-آیا-recovery-می-تواند-باعث-خراب-شدن-کارت-شود">22. آیا Recovery می تواند باعث خراب شدن کارت شود؟</h2>
+<p>نرم افزارهای Recovery معمولا برای خواندن اطلاعات طراحی شده اند، اما عملیات ریکاوری می تواند فشار زیادی روی یک حافظه خراب وارد کند.</p>
+<p>مخصوصا اگر حافظه از قبل مشکل سخت افزاری داشته باشد.</p>
+<p>اگر بعد از Recovery کارت دیگر رفتار عادی ندارد، ابتدا Reader دیگری را امتحان کنید و وضعیت کارت را در Disk Management بررسی کنید.</p>
+<hr>
+<h2 id="23-اگر-بعد-از-recovery-کارت-format-نمی-شود">23. اگر بعد از Recovery کارت Format نمی شود</h2>
+<p>اگر فایل ها دیگر مهم نیستند، می توانید کارت را کاملا از نو پارتیشن بندی کنید.</p>
+<p>یک روش استاندارد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#F97583">diskpart</span></span>
+<span class="line"><span style="color:#E1E4E8">list disk</span></span>
+<span class="line"><span style="color:#E1E4E8">select disk </span><span style="color:#79B8FF">3</span></span>
+<span class="line"><span style="color:#E1E4E8">clean</span></span>
+<span class="line"><span style="color:#E1E4E8">create partition primary</span></span>
+<span class="line"><span style="color:#E1E4E8">select partition </span><span style="color:#79B8FF">1</span></span>
+<span class="line"><span style="color:#F97583">format</span><span style="color:#E1E4E8"> fs=exfat quick</span></span>
+<span class="line"><span style="color:#E1E4E8">assign</span></span>
+<span class="line"><span style="color:#F97583">exit</span></span></code></pre>
+<p>اگر <code>create partition primary</code> خطا داد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">clean</span></span>
+<span class="line"><span style="color:#E1E4E8">create partition primary offset=</span><span style="color:#79B8FF">1024</span></span></code></pre>
+<p>سپس:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">select partition </span><span style="color:#79B8FF">1</span></span>
+<span class="line"><span style="color:#F97583">format</span><span style="color:#E1E4E8"> fs=exfat quick</span></span>
+<span class="line"><span style="color:#E1E4E8">assign</span></span></code></pre>
+<p>در صورت موفقیت، کارت دوباره قابل استفاده خواهد بود.</p>
+<hr>
+<h2 id="24-اگر-ظرفیت-کارت-درست-نمایش-داده-نمی-شود">24. اگر ظرفیت کارت درست نمایش داده نمی شود</h2>
+<p>اگر کارت حافظه ظرفیت غیر عادی نشان می دهد، مثلا کارت 32GB به صورت 8GB یا 0GB نمایش داده می شود، ابتدا Reader دیگری را امتحان کنید.</p>
+<p>اگر مشکل در چند دستگاه تکرار شد، احتمال خرابی سخت افزاری یا تقلبی بودن کارت وجود دارد.</p>
+<p>برای کارت های مشکوک بهتر است ظرفیت واقعی حافظه با ابزارهای تست مخصوص بررسی شود.</p>
+<hr>
+<h2 id="25-اگر-کارت-بعد-از-format-دوباره-خراب-می-شود">25. اگر کارت بعد از Format دوباره خراب می شود</h2>
+<p>اگر کارت را Format می کنید اما بعد از مدتی دوباره:</p>
+<ul>
+<li>RAW می شود</li>
+<li>فایل ها خراب می شوند</li>
+<li>فایل ها ناپدید می شوند</li>
+<li>امکان نوشتن از بین می رود</li>
+<li>ظرفیت اشتباه نمایش داده می شود</li>
+</ul>
+<p>احتمال خرابی سخت افزاری بالاست.</p>
+<p>در چنین شرایطی بهتر است به حافظه برای نگهداری اطلاعات مهم اعتماد نکنید.</p>
+<hr>
+<h2 id="26-بهترین-فایل-سیستم-برای-چه-کاری-است">26. بهترین فایل سیستم برای چه کاری است؟</h2>
+<div class="table-wrapper">
+    <table>
+    <thead>
+        <tr>
+        <th>کاربرد</th>
+        <th>پیشنهاد</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>فلش معمولی</td>
+        <td>exFAT</td>
+        </tr>
+        <tr>
+        <td>انتقال فایل های بزرگ</td>
+        <td>exFAT</td>
+        </tr>
+        <tr>
+        <td>استفاده بین Windows و دستگاه های جدید</td>
+        <td>exFAT</td>
+        </tr>
+        <tr>
+        <td>دستگاه های قدیمی</td>
+        <td>FAT32</td>
+        </tr>
+        <tr>
+        <td>کارت حافظه دوربین</td>
+        <td>طبق توصیه سازنده</td>
+        </tr>
+        <tr>
+        <td>کارت حافظه گوشی</td>
+        <td>طبق پشتیبانی گوشی</td>
+        </tr>
+        <tr>
+        <td>فایل های بزرگ تر از 4GB</td>
+        <td>exFAT</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+<p>FAT32 یک محدودیت مهم دارد: یک فایل نمی تواند بزرگ تر از حدود 4GB باشد.</p>
+<p>بنابراین اگر با فایل های بزرگ کار می کنید، exFAT معمولا انتخاب مناسب تری است.</p>
+<hr>
+<h2 id="27-روش-سریع-تعمیر-فلش-یا-مموری-که-اطلاعاتش-مهم-نیست">27. روش سریع تعمیر فلش یا مموری که اطلاعاتش مهم نیست</h2>
+<p>اگر مطمئن هستید اطلاعات لازم نیستند و حافظه توسط ویندوز شناسایی شده است:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#F97583">diskpart</span></span>
+<span class="line"><span style="color:#E1E4E8">list disk</span></span>
+<span class="line"><span style="color:#E1E4E8">select disk X</span></span>
+<span class="line"><span style="color:#E1E4E8">clean</span></span>
+<span class="line"><span style="color:#E1E4E8">create partition primary</span></span>
+<span class="line"><span style="color:#E1E4E8">select partition </span><span style="color:#79B8FF">1</span></span>
+<span class="line"><span style="color:#F97583">format</span><span style="color:#E1E4E8"> fs=exfat quick</span></span>
+<span class="line"><span style="color:#E1E4E8">assign</span></span>
+<span class="line"><span style="color:#F97583">exit</span></span></code></pre>
+<p>به جای <code>X</code> شماره واقعی فلش یا کارت حافظه را قرار دهید.</p>
+<p>اگر <code>create partition primary</code> خطا داد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">clean</span></span>
+<span class="line"><span style="color:#E1E4E8">create partition primary offset=</span><span style="color:#79B8FF">1024</span></span></code></pre>
+<p>سپس:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">select partition </span><span style="color:#79B8FF">1</span></span>
+<span class="line"><span style="color:#F97583">format</span><span style="color:#E1E4E8"> fs=exfat quick</span></span>
+<span class="line"><span style="color:#E1E4E8">assign</span></span>
+<span class="line"><span style="color:#F97583">exit</span></span></code></pre>
+<hr>
+<h2 id="28-مهم-ترین-نکته-در-استفاده-از-diskpart">28. مهم ترین نکته در استفاده از DiskPart</h2>
+<p>بزرگ ترین خطر DiskPart خود ابزار نیست؛ انتخاب Disk اشتباه است.</p>
+<p>فرض کنید کامپیوتر شما این وضعیت را دارد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Disk 0    465 GB</span></span>
+<span class="line"><span>Disk 1    447 GB</span></span>
+<span class="line"><span>Disk 2    232 GB</span></span>
+<span class="line"><span>Disk 3     28 GB</span></span></code></pre>
+<p>اگر کارت حافظه 28GB است، احتمالا:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">select disk </span><span style="color:#79B8FF">3</span></span></code></pre>
+<p>درست است.</p>
+<p>اما اگر فلش 64GB باشد، نباید صرفا بر اساس شماره Disk آن را انتخاب کنید.</p>
+<p>همیشه ظرفیت را با حافظه واقعی خود مقایسه کنید.</p>
+<p>هرگز بدون بررسی از این دستور استفاده نکنید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">clean</span></span></code></pre>
+<hr>
+<h2 id="29-نتیجه-گیری">29. نتیجه گیری</h2>
+<p>مشکل فلش، کارت حافظه و microSD همیشه به معنی سوختن حافظه نیست.</p>
+<p>اگر ویندوز هنوز ظرفیت واقعی حافظه را تشخیص می دهد، معمولا ارزش دارد ابتدا فایل سیستم و پارتیشن بندی آن را بررسی کنیم.</p>
+<p>در بسیاری از موارد می توان با DiskPart پارتیشن قبلی را پاک کرد و یک پارتیشن جدید ساخت:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">clean</span></span>
+<span class="line"><span style="color:#E1E4E8">create partition primary</span></span></code></pre>
+<p>و سپس آن را Format کرد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">select partition </span><span style="color:#79B8FF">1</span></span>
+<span class="line"><span style="color:#F97583">format</span><span style="color:#E1E4E8"> fs=exfat quick</span></span>
+<span class="line"><span style="color:#E1E4E8">assign</span></span></code></pre>
+<p>اگر ایجاد پارتیشن با خطای <code>No usable free extent</code> مواجه شد، می توان در بعضی شرایط از:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">create partition primary offset=</span><span style="color:#79B8FF">1024</span></span></code></pre>
+<p>استفاده کرد.</p>
+<p>اما اگر حافظه به صورت <code>No Media</code> و <code>0 B</code> نمایش داده شود یا با چند Card Reader مختلف مرتب قطع و وصل شود، احتمال خرابی سخت افزاری بالاتر است و فرمت کردن دیگر راه حل اصلی نیست.</p>
+<p>در نهایت همیشه این قانون را به خاطر داشته باشید:</p>
+<p><strong>اگر اطلاعات مهم هستند، اول Recovery و بعد تعمیر.</strong></p>
+<p><strong>اگر اطلاعات مهم نیستند، می توان پارتیشن را پاک کرد و حافظه را از نو ساخت.</strong></p>
+</div></article></main><footer data-astro-cid-jo6i4kqk>&copy; تمامی حقوق این وب سایت متعلق به فرید کرمی می باشد.<br data-astro-cid-jo6i4kqk>2026<div class="social-links" data-astro-cid-jo6i4kqk><a href="https://www.linkedin.com/in/faridkarami" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Follow me on Linkedin</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://github.com/faridkarami" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Go to my GitHub repo</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><a href="https://www.npmjs.com/~faridkarami" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Go to my NPM page</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-hexagon"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg></a><a href="https://www.youtube.com/channel/UCynzTyn5LaMJBS_wI0AT0sA" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Watch my channel on Youtube</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a><a href="https://www.aparat.com/faridkarami.ir" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Watch my channel on Aparat</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-film"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M7 3v18"></path><path d="M3 7.5h4"></path><path d="M3 12h18"></path><path d="M3 16.5h4"></path><path d="M17 3v18"></path><path d="M17 7.5h4"></path><path d="M17 16.5h4"></path></svg></a><a href="/rss.xml" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>RSS Feed</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></div><div class="text-container" data-astro-cid-6bctqxxv><span class="letter" data-astro-cid-6bctqxxv>F</span><span class="letter" data-astro-cid-6bctqxxv>a</span><span class="letter" data-astro-cid-6bctqxxv>r</span><span class="letter" data-astro-cid-6bctqxxv>i</span><span class="letter" data-astro-cid-6bctqxxv>d</span><span class="letter" style="width: 10px;" data-astro-cid-6bctqxxv></span><span class="letter" data-astro-cid-6bctqxxv>K</span><span class="letter" data-astro-cid-6bctqxxv>a</span><span class="letter" data-astro-cid-6bctqxxv>r</span><span class="letter" data-astro-cid-6bctqxxv>a</span><span class="letter" data-astro-cid-6bctqxxv>m</span><span class="letter" data-astro-cid-6bctqxxv>i</span></div></footer></body></html>

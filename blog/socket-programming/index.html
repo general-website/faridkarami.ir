@@ -1,0 +1,234 @@
+<!DOCTYPE html><html lang="fa" dir="rtl" data-astro-cid-tldeq5d5><head><!-- Prevent theme flash before first paint --><script>
+	(function () {
+		try {
+			var stored = localStorage.getItem('theme');
+			var theme =
+				stored === 'light' || stored === 'dark'
+					? stored
+					: window.matchMedia('(prefers-color-scheme: dark)').matches
+						? 'dark'
+						: 'light';
+			document.documentElement.setAttribute('data-theme', theme);
+		} catch (e) {
+			document.documentElement.setAttribute('data-theme', 'light');
+		}
+	})();
+</script><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" href="/favicon.ico"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="فرید کرمی" href="https://faridkarami.ir/rss.xml"><meta name="generator" content="Astro v7.2.9"><style>@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/65139d19f640333b.ttf") format("truetype");font-display:swap;font-weight:100;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/1596465ad06f66b8.ttf") format("truetype");font-display:swap;font-weight:200;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/49f5e1cfe7c7b5da.ttf") format("truetype");font-display:swap;font-weight:300;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/4960ffc0cf26ac45.ttf") format("truetype");font-display:swap;font-weight:400;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/8a52d37c17ac8dff.ttf") format("truetype");font-display:swap;font-weight:500;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/11fd06a0899e79b6.ttf") format("truetype");font-display:swap;font-weight:600;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/52d21d992a440ab4.ttf") format("truetype");font-display:swap;font-weight:700;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/3617fcaaca357b50.ttf") format("truetype");font-display:swap;font-weight:800;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/a1f1f02040c6e35b.ttf") format("truetype");font-display:swap;font-weight:900;font-style:normal;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:100;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:200;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:300;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:400;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:500;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:600;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial Bold";src:local("Arial Bold");font-display:swap;font-weight:700;font-style:normal;size-adjust:112.5046%;ascent-override:122.1284%;descent-override:65.5973%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial Bold";src:local("Arial Bold");font-display:swap;font-weight:800;font-style:normal;size-adjust:112.5046%;ascent-override:122.1284%;descent-override:65.5973%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial Bold";src:local("Arial Bold");font-display:swap;font-weight:900;font-style:normal;size-adjust:112.5046%;ascent-override:122.1284%;descent-override:65.5973%;line-gap-override:0%;}:root{--font-primary:Primary-c1310e4828f8d8fc,"Primary-c1310e4828f8d8fc fallback: Arial","Primary-c1310e4828f8d8fc fallback: Arial Bold",system-ui,sans-serif;}</style><link rel="preload" href="/assets/fonts/65139d19f640333b.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/1596465ad06f66b8.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/49f5e1cfe7c7b5da.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/4960ffc0cf26ac45.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/8a52d37c17ac8dff.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/11fd06a0899e79b6.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/52d21d992a440ab4.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/3617fcaaca357b50.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/a1f1f02040c6e35b.ttf" as="font" type="font/ttf" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://faridkarami.ir/blog/socket-programming/"><!-- Primary Meta Tags --><title>برنامه نویسی سوکت</title><meta name="description" content="بررسی سوکت پروگرمینگ در کلاینت و سرور و تبادل دوطرفه data و بستن session"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://faridkarami.ir/blog/socket-programming/"><meta property="og:title" content="برنامه نویسی سوکت"><meta property="og:description" content="بررسی سوکت پروگرمینگ در کلاینت و سرور و تبادل دوطرفه data و بستن session"><meta property="og:image" content="https://faridkarami.ir/assets/default.3rEwbyG8.jpg"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><script type="module">function e(){let e=document.querySelectorAll(`a`),t=window.location.hostname;e.forEach(e=>{let n=e.getAttribute(`href`);if(n&&(n.startsWith(`http://`)||n.startsWith(`https://`)||n.startsWith(`//`)))try{new URL(n,window.location.href).hostname!==t&&(e.setAttribute(`target`,`_blank`),e.setAttribute(`rel`,`noopener noreferrer`))}catch{}})}e();</script><link rel="stylesheet" href="/assets/BaseHead.CfFMrezF.css"><link rel="stylesheet" href="/assets/Header.DSs-BPy5.css"><style>main[data-astro-cid-tldeq5d5]{width:calc(100% - 2em);max-width:100%;margin:0 auto}.hero-image[data-astro-cid-tldeq5d5]{width:100%}.hero-image[data-astro-cid-tldeq5d5] img[data-astro-cid-tldeq5d5]{box-shadow:var(--box-shadow);border-radius:12px;margin:0 auto;display:block}.prose[data-astro-cid-tldeq5d5]{width:1200px;max-width:calc(100% - 2em);color:rgb(var(--text));margin:auto;padding:1em}.title[data-astro-cid-tldeq5d5]{text-align:center;margin-bottom:1em;padding:1em 0;line-height:1}.title[data-astro-cid-tldeq5d5] h1[data-astro-cid-tldeq5d5]{margin:0 0 .5em}.date[data-astro-cid-tldeq5d5]{color:rgb(var(--text-muted));margin-bottom:.5em}.last-updated-on[data-astro-cid-tldeq5d5]{font-style:italic}
+</style></head><body data-astro-cid-tldeq5d5><header data-astro-cid-nen7h5rs><nav data-astro-cid-nen7h5rs><h2 data-astro-cid-nen7h5rs><a href="/" data-astro-cid-nen7h5rs>فرید کرمی</a></h2><div class="internal-links desktop-only" data-astro-cid-nen7h5rs><a href="/" data-astro-cid-nen7h5rs="true">صفحه اصلی</a><a href="/blog" class="active" data-astro-cid-nen7h5rs="true">بلاگ</a><a href="/courses" data-astro-cid-nen7h5rs="true">دوره های آموزشی</a><a href="/about" data-astro-cid-nen7h5rs="true">درباره من</a></div><div class="nav-end" data-astro-cid-nen7h5rs><div class="social-links desktop-only" data-astro-cid-nen7h5rs><a href="https://www.linkedin.com/in/faridkarami" target="_blank" rel="noopener noreferrer" data-astro-cid-nen7h5rs><span class="sr-only" data-astro-cid-nen7h5rs>Follow me on Linkedin</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="22" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-nen7h5rs="true" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://github.com/faridkarami" target="_blank" rel="noopener noreferrer" data-astro-cid-nen7h5rs><span class="sr-only" data-astro-cid-nen7h5rs>Go to my GitHub repo</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="22" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-nen7h5rs="true" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><a href="https://www.youtube.com/channel/UCynzTyn5LaMJBS_wI0AT0sA" target="_blank" rel="noopener noreferrer" data-astro-cid-nen7h5rs><span class="sr-only" data-astro-cid-nen7h5rs>Watch my channel on Youtube</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="22" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-nen7h5rs="true" class="lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a></div><details class="mobile-only dropdown" data-astro-cid-nen7h5rs><summary aria-label="منوی موبایل" data-astro-cid-nen7h5rs><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="22" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-nen7h5rs="true" class="lucide lucide-menu"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></summary><div class="dropdown-content" data-astro-cid-nen7h5rs><a href="/" data-astro-cid-nen7h5rs="true">صفحه اصلی</a><a href="/blog" class="active" data-astro-cid-nen7h5rs="true">بلاگ</a><a href="/courses" data-astro-cid-nen7h5rs="true">دوره های آموزشی</a><a href="/about" data-astro-cid-nen7h5rs="true">درباره من</a></div></details><button class="theme-toggle" type="button" data-theme-toggle aria-label="تغییر حالت روشن و تاریک" data-astro-cid-l6lhmie6><span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true" data-astro-cid-l6lhmie6><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="18" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-l6lhmie6="true" class="lucide lucide-sun"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></span><span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true" data-astro-cid-l6lhmie6><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="18" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-l6lhmie6="true" class="lucide lucide-moon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></span></button><script type="module">var e=`theme`,t=()=>{let t=localStorage.getItem(e);return t===`light`||t===`dark`?t:window.matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`},n=t=>{document.documentElement.setAttribute(`data-theme`,t),localStorage.setItem(e,t),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{let n=t===`dark`?`فعال کردن حالت روشن`:`فعال کردن حالت تاریک`;e.setAttribute(`aria-label`,n),e.setAttribute(`aria-pressed`,String(t===`dark`))})},r=()=>{n((document.documentElement.getAttribute(`data-theme`)===`dark`?`dark`:`light`)==`dark`?`light`:`dark`)};n(t()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,r)}),window.matchMedia(`(prefers-color-scheme: dark)`).addEventListener(`change`,t=>{localStorage.getItem(e)||n(t.matches?`dark`:`light`)});</script></div></nav></header><main data-astro-cid-tldeq5d5><article data-astro-cid-tldeq5d5><div class="hero-image" data-astro-cid-tldeq5d5><img src="/assets/socket-programming.C9Bm3oML_Hdb5L.webp" alt data-astro-cid-tldeq5d5="true" loading="lazy" decoding="async" width="1020" height="510"></div><div class="prose" data-astro-cid-tldeq5d5><div class="title" data-astro-cid-tldeq5d5><div class="date" data-astro-cid-tldeq5d5><time datetime="2020-01-14T20:30:00.000Z">۲۵ دی ۱۳۹۸</time><!-- export const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric',
+}); --><!-- en-us --></div><h1 data-astro-cid-tldeq5d5>برنامه نویسی سوکت</h1><hr data-astro-cid-tldeq5d5></div><p>برنامه نویسی سوکت (Socket Programming) یکی از اساسی ترین مفاهیم در علوم کامپیوتر و مهندسی شبکه است که امکان برقراری ارتباط، انتقال داده و تعامل میان دو یا چند فرایند (Process) مستقل را از طریق شبکه فراهم میکند. در این مقاله به بررسی عمیق ساختار، انواع، مفاهیم پایه، مدل های پردازش و پیاده سازی های عملی سوکت پروگرمینگ میپردازیم.</p>
+<h2 id="1-سوکت-socket-چیست">1. سوکت (Socket) چیست؟</h2>
+<p>سوکت یک نقطه پایانی (Endpoint) برای ارسال و دریافت داده در یک پیوند ارتباطی دوطرفه میان دو برنامه در حال اجرا در شبکه است. به بیان ساده، سوکت ترکیبی از دو المان کلیدی زیر است:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Socket=(IP Address,Port Number)</span></span></code></pre>
+<ul>
+<li><strong>آدرس IP:</strong> هویت و مکان دستگاه میزبان (Host) را در شبکه مشخص میکند.</li>
+<li><strong>شماره پورت (Port):</strong> فرایند یا سرویس خاصی را در آن دستگاه مشخص میکند تا سیستم عامل بداند ترافیک دریافتی متعلق به کدام برنامه است.</li>
+</ul>
+<p>سوکت ها لایه ای انتزاعی روی پشته پروتکل های شبکه سیستم عامل (OS Network Stack) ارائه میدهند و از طریق رابط استاندارد سیستم عامل (معمولا مشتق شده از Berkeley Sockets در یونیکس) در دسترس برنامه نویسان قرار میگیرند.</p>
+<h2 id="2-جایگاه-سوکت-در-مدل-های-شبکه-osi-و-tcpip">2. جایگاه سوکت در مدل های شبکه (OSI و TCP/IP)</h2>
+<p>سوکت ها به عنوان رابطی میان <strong>لایه کاربرد (Application Layer)</strong> و <strong>لایه انتقال (Transport Layer)</strong> عمل میکنند:</p>
+<ul>
+<li>در مدل TCP/IP، پروتکل های لایه کاربرد مثل HTTP، FTP، SSH و SMTP روی سوکت های پیاده سازی شده در لایه انتقال سوار میشوند.</li>
+<li>فرایندها داده های خام را به سوکت میسپارند و سیستم عامل پکت بندی، مسیریابی، کنترل جریان و ارسال فیزیکی را انجام میدهد.</li>
+</ul>
+<h2 id="3-انواع-اصلی-سوکت-ها">3. انواع اصلی سوکت ها</h2>
+<p>سوکت ها بر اساس پروتکل لایه انتقال به چند دسته اصلی تقسیم میشوند:</p>
+<h3 id="الف-سوکت-های-جریانی-stream-sockets--tcp">الف) سوکت های جریانی (Stream Sockets / TCP)</h3>
+<ul>
+<li>
+<p><strong>پروتکل زیرین:</strong> TCP (Transmission Control Protocol)</p>
+</li>
+<li>
+<p><strong>نوع ارتباط:</strong> اتصال گرا (Connection-oriented)</p>
+</li>
+<li>
+<p><strong>ویژگی ها:</strong></p>
+<ul>
+<li>تضمین تحویل داده ها (Reliable)</li>
+<li>حفظ ترتیب بسته ها (Ordered)</li>
+<li>کنترل ازدحام و جریان داده (Flow &amp; Congestion Control)</li>
+<li>داده ها به صورت جریان پیوسته از بایت ها (Byte Stream) بدون مرز پیامی مشخص منتقل میشوند.</li>
+</ul>
+</li>
+<li>
+<p><strong>کاربردها:</strong> وب (HTTP/HTTPS)، انتقال فایل (FTP/SFTP)، پایگاه داده ها، سیستم های مالی و ایمیل.</p>
+</li>
+</ul>
+<h3 id="ب-سوکت-های-دیتاگرام-datagram-sockets--udp">ب) سوکت های دیتاگرام (Datagram Sockets / UDP)</h3>
+<ul>
+<li>
+<p><strong>پروتکل زیرین:</strong> UDP (User Datagram Protocol)</p>
+</li>
+<li>
+<p><strong>نوع ارتباط:</strong> بدون اتصال (Connectionless)</p>
+</li>
+<li>
+<p><strong>ویژگی ها:</strong></p>
+<ul>
+<li>عدم تضمین رسیدن بسته ها به مقصد</li>
+<li>عدم تضمین ترتیب دریافت</li>
+<li>سرپوش (Overhead) بسیار پایین، سرعت بسیار بالا و تاخیر کم</li>
+<li>حفظ مرز پیام ها (Message Boundaries)</li>
+</ul>
+</li>
+<li>
+<p><strong>کاربردها:</strong> بازی های آنلاین، استریم ویدیو/صدا، تماس تصویری (VoIP) و DNS.</p>
+</li>
+</ul>
+<h3 id="ج-سوکت-های-خام-raw-sockets">ج) سوکت های خام (Raw Sockets)</h3>
+<p>امکان دسترسی مستقیم به لایه های پایین تر شبکه (مثل لایه اینترنت/IP) بدون پردازش های لایه انتقال را میدهند. بیشتر برای ابزارهای امنیتی، اسکنرهای پورت (مثل Nmap) و پروتکل های نظارتی (مثل ICMP برای دستور Ping) استفاده میشوند.</p>
+<h3 id="د-سوکت-های-دامنه-یونیکس-unix-domain-sockets">د) سوکت های دامنه یونیکس (Unix Domain Sockets)</h3>
+<p>برای ارتباط بین فرایندی (IPC) داخل یک سیستم عامل واحد به کار میروند و از بستر شبکه عبور نمیکنند؛ بنابراین بازدهی و سرعت فوق العاده بالایی نسبت به سوکت های شبکه ای دارند.</p>
+<h2 id="4-چرخه-حیات-سوکت-در-ارتباط-tcp">4. چرخه حیات سوکت در ارتباط TCP</h2>
+<p>ارتباط کلاینت-سرور در سوکت های TCP طی مراحل ساختاریافته زیر شکل میگیرد:</p>
+<h3 id="1-آماده-سازی-سمت-سرور-server-setup">1. آماده سازی سمت سرور (Server Setup)</h3>
+<ol>
+<li><strong>ایجاد سوکت با ()socket:</strong> سرور یک سوکت جدید به عنوان نقطه پایانی ارتباط در هسته سیستم عامل میسازد.</li>
+<li><strong>اتصال آدرس با ()bind:</strong> سرور سوکت ساخته شده را به یک آدرس IP مشخص و یک شماره پورت معین گره میزند.</li>
+<li><strong>گوش دادن با ()listen:</strong> سوکت وارد حالت انتظار (Passive) میشود تا درخواست های ورودی کلاینت ها را بشنود و صف درخواست ها را مدیریت کند.</li>
+<li><strong>انتظار برای پذیرش با ()accept:</strong> سرور متوقف (Block) میشود و منتظر ورود اولین درخواست اتصال میماند.</li>
+</ol>
+<h3 id="2-برقراری-اتصال-از-سمت-کلاینت-handshake--connection">2. برقراری اتصال از سمت کلاینت (Handshake &amp; Connection)</h3>
+<ol>
+<li><strong>ایجاد سوکت کلاینت با ()socket:</strong> کلاینت نیز سوکت خود را برای شروع ارتباط میسازد.</li>
+<li><strong>ارسال درخواست اتصال با ()connect:</strong> کلاینت یک بسته درخواست اتصال (SYN) به سمت IP و پورت سرور میفرستد.</li>
+<li><strong>پذیرش و پاسخ سرور:</strong>
+<ul>
+<li>متد ()accept در سرور با دریافت درخواست آزاد میشود و یک سوکت جدید اختصاصی برای این کلاینت ایجاد میکند.</li>
+<li>سرور بسته پاسخ تایید اتصال (SYN-ACK) را برای کلاینت ارسال میکند تا اتصال رسمی برقرار شود.</li>
+</ul>
+</li>
+</ol>
+<h3 id="3-تبادل-داده-data-exchange">3. تبادل داده (Data Exchange)</h3>
+<ul>
+<li><strong>ارسال و دریافت با ()send و ()recv:</strong> پس از برقراری کامل اتصال، دو طرف به صورت دوطرفه شروع به تبادل بایت های داده میکنند. هر دو سمت میتوانند در این مرحله پیام بفرستند یا منتظر دریافت پیام بمانند.</li>
+</ul>
+<h3 id="4-پایان-و-بستن-ارتباط-connection-teardown">4. پایان و بستن ارتباط (Connection Teardown)</h3>
+<ol>
+<li><strong>ارسال پایان با ()close کلاینت:</strong> کلاینت پس از اتمام کار، متد ()close را فراخوانی کرده و بسته پایان ارتباط (FIN) را به سرور میفرستد.</li>
+<li><strong>بستن سوکت در سرور با ()close:</strong> سرور با دریافت پیام اتمام، سوکت ارتباطی آن کلاینت را میبندد و منابع اختصاص یافته آزاد میشوند.</li>
+</ol>
+<hr>
+<h3 id="گام-های-سمت-سرور">گام های سمت سرور:</h3>
+<ol>
+<li>socket(): ایجاد فایل توصیف گر سوکت (Socket Descriptor).</li>
+<li>bind(): متصل کردن سوکت به یک آدرس IP و پورت خاص.</li>
+<li>listen(): قرار دادن سوکت در حالت انتظار برای دریافت درخواست های ورودی و تعیین اندازه صف انتظار (Backlog).</li>
+<li>accept(): مسدود شدن (Blocking) تا زمان رسیدن درخواست جدید؛ با رسیدن اتصال، یک سوکت مجزا برای ارتباط با همان کلاینت ایجاد میشود.</li>
+<li>recv() و send(): خواندن و نوشتن داده روی سوکت ارتباطی جدید.</li>
+<li>close(): پایان ارتباط و آزادسازی منابع سوکت.</li>
+</ol>
+<h3 id="گام-های-سمت-کلاینت">گام های سمت کلاینت:</h3>
+<ol>
+<li>socket(): ایجاد سوکت کلاینت.</li>
+<li>connect(): ارسال درخواست شروع فرایند دست تکانی سه مرحله ای (3-Way Handshake) به IP و پورت سرور.</li>
+<li>send() و recv(): ارسال و دریافت داده.</li>
+<li>close(): بستن ارتباط.</li>
+</ol>
+<h2 id="5-مدل-های-مدیریت-ورودیخروجی-io-models">5. مدل های مدیریت ورودی/خروجی (I/O Models)</h2>
+<p>در سیستم های واقعی، مدیریت هزاران اتصال همزمان یکی از چالش های کلیدی است. برای این منظور مدل های مختلفی وجود دارد:</p>
+<ol>
+<li>
+<p><strong>مدل مسدودکننده (Blocking I/O):</strong> ساده ترین حالت که در آن فرایند هنگام خواندن یا نوشتن تا زمان آماده شدن داده معلق (Blocked) میماند.</p>
+</li>
+<li>
+<p><strong>مدل چندنخی / چندفرایندی (Multi-Threaded / Multi-Process):</strong> برای هر کلاینت متصل شده یک Thread یا Process مجزا ایجاد میشود. عیب آن مصرف بالای حافظه و سربار زیاد تغییر زمینه (Context Switching) در تعداد بالای اتصال هاست.</p>
+</li>
+<li>
+<p><strong>مدل نامسدودکننده و چندگانه سازی (Non-Blocking &amp; I/O Multiplexing):</strong> سیستم عامل رویدادهای مربوط به چندین سوکت را مانیتور میکند و تنها در صورت آماده بودن داده به برنامه هشدار میدهد:</p>
+<ul>
+<li>select() و poll() (روش های قدیمی تر با مرتبه زمانی O(n))</li>
+<li>epoll در لینوکس و kqueue در BSD/macOS (روش های مقیاس پذیر با مرتبه زمانی O(1))</li>
+</ul>
+</li>
+<li>
+<p><strong>مدل ناهمگام و رویدادمحور (Asynchronous / Event-Driven):</strong> فریمورک ها و محیط های اجرایی مدرن مثل Node.js (با موتور libuv)، زبان Go (با Goroutineها) و Python AsyncIO از این الگو استفاده میکنند تا با تعداد کمی ترد هزاران اتصال همزمان را به صورت سبک مدیریت کنند.</p>
+</li>
+</ol>
+<h2 id="6-پیاده-سازی-عملی">6. پیاده سازی عملی</h2>
+<h3 id="پیاده-سازی-در-python-مدل-tcp-ساده">پیاده سازی در Python (مدل TCP ساده)</h3>
+<h4 id="کد-سرور">کد سرور:</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#F97583">import</span><span style="color:#E1E4E8"> socket</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">SERVER_IP</span><span style="color:#F97583"> =</span><span style="color:#9ECBFF"> "127.0.0.1"</span></span>
+<span class="line"><span style="color:#79B8FF">SERVER_PORT</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> 9000</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">server_socket </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> socket.socket(socket.</span><span style="color:#79B8FF">AF_INET</span><span style="color:#E1E4E8">, socket.</span><span style="color:#79B8FF">SOCK_STREAM</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">server_socket.bind((</span><span style="color:#79B8FF">SERVER_IP</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">SERVER_PORT</span><span style="color:#E1E4E8">))</span></span>
+<span class="line"><span style="color:#E1E4E8">server_socket.listen(</span><span style="color:#79B8FF">5</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">print</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"Server is listening on </span><span style="color:#79B8FF">{SERVER_IP}</span><span style="color:#9ECBFF">:</span><span style="color:#79B8FF">{SERVER_PORT}</span><span style="color:#9ECBFF">..."</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">while</span><span style="color:#79B8FF"> True</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">    client_socket, client_address </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> server_socket.accept()</span></span>
+<span class="line"><span style="color:#79B8FF">    print</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"Connection accepted from </span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">client_address</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">    data </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> client_socket.recv(</span><span style="color:#79B8FF">1024</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">    if</span><span style="color:#E1E4E8"> data:</span></span>
+<span class="line"><span style="color:#E1E4E8">        message </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> data.decode(</span><span style="color:#9ECBFF">"utf-8"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#79B8FF">        print</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"Received: </span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">message</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">        client_socket.sendall(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"Echo: </span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">message</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">.encode(</span><span style="color:#9ECBFF">"utf-8"</span><span style="color:#E1E4E8">))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">    client_socket.close()</span></span></code></pre>
+<h4 id="کد-کلاینت">کد کلاینت:</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="javascript"><code><span class="line"><span style="color:#F97583">import</span><span style="color:#E1E4E8"> socket</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">SERVER_IP = </span><span style="color:#9ECBFF">"127.0.0.1"</span></span>
+<span class="line"><span style="color:#E1E4E8">SERVER_PORT = 9000</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)</span></span>
+<span class="line"><span style="color:#E1E4E8">client_socket.connect((SERVER_IP, SERVER_PORT))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">client_socket.sendall(</span><span style="color:#9ECBFF">"Hello Server!"</span><span style="color:#E1E4E8">.encode(</span><span style="color:#9ECBFF">"utf-8"</span><span style="color:#E1E4E8">))</span></span>
+<span class="line"><span style="color:#E1E4E8">response = client_socket.recv(1024)</span></span>
+<span class="line"><span style="color:#E1E4E8">print(f</span><span style="color:#9ECBFF">"Response from server: {response.decode('utf-8')}"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">client_socket.close()</span></span></code></pre>
+<h3 id="پیاده-سازی-در-nodejs-استفاده-از-ماژول-بومی-net">پیاده سازی در Node.js (استفاده از ماژول بومی net)</h3>
+<h4 id="کد-سرور-tcp">کد سرور TCP:</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="javascript"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> net</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> require</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'net'</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> server</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> net.</span><span style="color:#B392F0">createServer</span><span style="color:#E1E4E8">((</span><span style="color:#FFAB70">socket</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=&gt;</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">	console.</span><span style="color:#B392F0">log</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'Client connected:'</span><span style="color:#E1E4E8">, socket.remoteAddress, socket.remotePort);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">	socket.</span><span style="color:#B392F0">on</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'data'</span><span style="color:#E1E4E8">, (</span><span style="color:#FFAB70">data</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=&gt;</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">		console.</span><span style="color:#B392F0">log</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'Received:'</span><span style="color:#E1E4E8">, data.</span><span style="color:#B392F0">toString</span><span style="color:#E1E4E8">());</span></span>
+<span class="line"><span style="color:#E1E4E8">		socket.</span><span style="color:#B392F0">write</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">`Server Echo: ${</span><span style="color:#E1E4E8">data</span><span style="color:#9ECBFF">}`</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">	});</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">	socket.</span><span style="color:#B392F0">on</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'end'</span><span style="color:#E1E4E8">, () </span><span style="color:#F97583">=&gt;</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">		console.</span><span style="color:#B392F0">log</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'Client disconnected'</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">	});</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">	socket.</span><span style="color:#B392F0">on</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'error'</span><span style="color:#E1E4E8">, (</span><span style="color:#FFAB70">err</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=&gt;</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">		console.</span><span style="color:#B392F0">error</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'Socket error:'</span><span style="color:#E1E4E8">, err.message);</span></span>
+<span class="line"><span style="color:#E1E4E8">	});</span></span>
+<span class="line"><span style="color:#E1E4E8">});</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">server.</span><span style="color:#B392F0">listen</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">9000</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">'127.0.0.1'</span><span style="color:#E1E4E8">, () </span><span style="color:#F97583">=&gt;</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">	console.</span><span style="color:#B392F0">log</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'TCP Server running on port 9000'</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">});</span></span></code></pre>
+<h2 id="7-چالش-های-فنی-و-نکات-پیشرفته">7. چالش های فنی و نکات پیشرفته</h2>
+<ul>
+<li>
+<p><strong>مسئله قاب بندی پیام ها (Framing Problem):</strong> در TCP چون داده ها به صورت بایت استریم ارسال میشوند، ممکن است داده های دو دستور send جداگانه به هم بچسبند (TCP Segment Packing) یا یک پیام طولانی خرد شود (Fragmentation). راهکارها عبارتند از:</p>
+<ul>
+<li>استفاده از کاراکترهای جداکننده (Delimiter) مثل \n یا \0</li>
+<li>اضافه کردن پیشوند طول پیام (Length-prefixed Framing)</li>
+</ul>
+</li>
+<li>
+<p><strong>سوکت های مسدود شده و مدیریت Keep-Alive:</strong> اتصال هایی که بدون ارسال بسته قطع میشوند (مثلا قطع شدن کابل) ممکن است در سرور باز بمانند. استفاده از قابلیت TCP Keep-Alive یا ارسال پینگ های سطح کاربردی (Heartbeat) برای تشخیص این سوکت های مرده ضروری است.</p>
+</li>
+<li>
+<p><strong>بافرها و Overflow:</strong> تنظیم ابعاد SO_RCVBUF و SO_SNDBUF در سطح سیستم عامل برای برنامه های با ترافیک حجیم جهت جلوگیری از افت بسته یا اتلاف منابع حیاتی است.</p>
+</li>
+<li>
+<p><strong>امنیت:</strong> سوکت های خام داده ها را به صورت متن ساده (Plaintext) ارسال میکنند. برای ارتباطات امن باید از لایه TLS/SSL روی سوکت (Secure Sockets / OpenSSL) استفاده شود.</p>
+</li>
+</ul>
+<h2 id="8-جمع-بندی">8. جمع بندی</h2>
+<p>سوکت پروگرمینگ سنگ بنای کلیه ارتباطات تحت شبکه و وب امروزی است. چه در حال توسعه وب اپلیکیشن ها باشید، چه سیستم های میکروسرویس و توزیع شده، یا بازی های آنلاین و سیستم های بلادرنگ (Real-time)، درک نحوه عملکرد سوکت ها، تفاوت TCP و UDP و الگوهای مدیریت I/O برای طراحی سیستم های کارآمد، مقیاس پذیر و مقاوم ضروری است.</p>
+</div></article></main><footer data-astro-cid-jo6i4kqk>&copy; تمامی حقوق این وب سایت متعلق به فرید کرمی می باشد.<br data-astro-cid-jo6i4kqk>2026<div class="social-links" data-astro-cid-jo6i4kqk><a href="https://www.linkedin.com/in/faridkarami" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Follow me on Linkedin</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://github.com/faridkarami" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Go to my GitHub repo</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><a href="https://www.npmjs.com/~faridkarami" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Go to my NPM page</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-hexagon"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg></a><a href="https://www.youtube.com/channel/UCynzTyn5LaMJBS_wI0AT0sA" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Watch my channel on Youtube</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a><a href="https://www.aparat.com/faridkarami.ir" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Watch my channel on Aparat</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-film"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M7 3v18"></path><path d="M3 7.5h4"></path><path d="M3 12h18"></path><path d="M3 16.5h4"></path><path d="M17 3v18"></path><path d="M17 7.5h4"></path><path d="M17 16.5h4"></path></svg></a><a href="/rss.xml" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>RSS Feed</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></div><div class="text-container" data-astro-cid-6bctqxxv><span class="letter" data-astro-cid-6bctqxxv>F</span><span class="letter" data-astro-cid-6bctqxxv>a</span><span class="letter" data-astro-cid-6bctqxxv>r</span><span class="letter" data-astro-cid-6bctqxxv>i</span><span class="letter" data-astro-cid-6bctqxxv>d</span><span class="letter" style="width: 10px;" data-astro-cid-6bctqxxv></span><span class="letter" data-astro-cid-6bctqxxv>K</span><span class="letter" data-astro-cid-6bctqxxv>a</span><span class="letter" data-astro-cid-6bctqxxv>r</span><span class="letter" data-astro-cid-6bctqxxv>a</span><span class="letter" data-astro-cid-6bctqxxv>m</span><span class="letter" data-astro-cid-6bctqxxv>i</span></div></footer></body></html>
