@@ -1,0 +1,426 @@
+<!DOCTYPE html><html lang="fa" dir="rtl" data-astro-cid-tldeq5d5><head><!-- Prevent theme flash before first paint --><script>
+	(function () {
+		try {
+			var stored = localStorage.getItem('theme');
+			var theme =
+				stored === 'light' || stored === 'dark'
+					? stored
+					: window.matchMedia('(prefers-color-scheme: dark)').matches
+						? 'dark'
+						: 'light';
+			document.documentElement.setAttribute('data-theme', theme);
+		} catch (e) {
+			document.documentElement.setAttribute('data-theme', 'light');
+		}
+	})();
+</script><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" href="/favicon.ico"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="فرید کرمی" href="https://faridkarami.ir/rss.xml"><meta name="generator" content="Astro v7.3.5"><style>@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/65139d19f640333b.ttf") format("truetype");font-display:swap;font-weight:100;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/1596465ad06f66b8.ttf") format("truetype");font-display:swap;font-weight:200;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/49f5e1cfe7c7b5da.ttf") format("truetype");font-display:swap;font-weight:300;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/4960ffc0cf26ac45.ttf") format("truetype");font-display:swap;font-weight:400;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/8a52d37c17ac8dff.ttf") format("truetype");font-display:swap;font-weight:500;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/11fd06a0899e79b6.ttf") format("truetype");font-display:swap;font-weight:600;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/52d21d992a440ab4.ttf") format("truetype");font-display:swap;font-weight:700;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/3617fcaaca357b50.ttf") format("truetype");font-display:swap;font-weight:800;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/a1f1f02040c6e35b.ttf") format("truetype");font-display:swap;font-weight:900;font-style:normal;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:100;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:200;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:300;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:400;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:500;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:600;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial Bold";src:local("Arial Bold");font-display:swap;font-weight:700;font-style:normal;size-adjust:112.5046%;ascent-override:122.1284%;descent-override:65.5973%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial Bold";src:local("Arial Bold");font-display:swap;font-weight:800;font-style:normal;size-adjust:112.5046%;ascent-override:122.1284%;descent-override:65.5973%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial Bold";src:local("Arial Bold");font-display:swap;font-weight:900;font-style:normal;size-adjust:112.5046%;ascent-override:122.1284%;descent-override:65.5973%;line-gap-override:0%;}:root{--font-primary:Primary-c1310e4828f8d8fc,"Primary-c1310e4828f8d8fc fallback: Arial","Primary-c1310e4828f8d8fc fallback: Arial Bold",system-ui,sans-serif;}</style><link rel="preload" href="/assets/fonts/65139d19f640333b.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/1596465ad06f66b8.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/49f5e1cfe7c7b5da.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/4960ffc0cf26ac45.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/8a52d37c17ac8dff.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/11fd06a0899e79b6.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/52d21d992a440ab4.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/3617fcaaca357b50.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/a1f1f02040c6e35b.ttf" as="font" type="font/ttf" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://faridkarami.ir/blog/twa-bubblewrap-guide/"><!-- Primary Meta Tags --><title>راهنمای کامل TWA</title><meta name="description" content="راهنمای جامع و عملی ساخت اپلیکیشن اندروید از وب اپلیکیشن با Trusted Web Activity و Bubblewrap؛ از آماده سازی محیط تا امضای APK و تنظیم Digital Asset Links."><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://faridkarami.ir/blog/twa-bubblewrap-guide/"><meta property="og:title" content="راهنمای کامل TWA"><meta property="og:description" content="راهنمای جامع و عملی ساخت اپلیکیشن اندروید از وب اپلیکیشن با Trusted Web Activity و Bubblewrap؛ از آماده سازی محیط تا امضای APK و تنظیم Digital Asset Links."><meta property="og:image" content="https://faridkarami.ir/assets/default.3rEwbyG8.jpg"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><script type="module">function e(){let e=document.querySelectorAll(`a`),t=window.location.hostname;e.forEach(e=>{let n=e.getAttribute(`href`);if(n&&(n.startsWith(`http://`)||n.startsWith(`https://`)||n.startsWith(`//`)))try{new URL(n,window.location.href).hostname!==t&&(e.setAttribute(`target`,`_blank`),e.setAttribute(`rel`,`noopener noreferrer`))}catch{}})}e();</script><link rel="stylesheet" href="/assets/BaseHead.CfFMrezF.css"><link rel="stylesheet" href="/assets/Header.2Hvj5ZSN.css"><style>main[data-astro-cid-tldeq5d5]{width:calc(100% - 2em);max-width:100%;margin:0 auto}.hero-image[data-astro-cid-tldeq5d5]{width:100%}.hero-image[data-astro-cid-tldeq5d5] img[data-astro-cid-tldeq5d5]{box-shadow:var(--box-shadow);border-radius:12px;margin:0 auto;display:block}.prose[data-astro-cid-tldeq5d5]{width:1200px;max-width:calc(100% - 2em);color:rgb(var(--text));margin:auto;padding:1em}.title[data-astro-cid-tldeq5d5]{text-align:center;margin-bottom:1em;padding:1em 0;line-height:1}.title[data-astro-cid-tldeq5d5] h1[data-astro-cid-tldeq5d5]{margin:0 0 .5em}.date[data-astro-cid-tldeq5d5]{color:rgb(var(--text-muted));margin-bottom:.5em}.last-updated-on[data-astro-cid-tldeq5d5]{font-style:italic}
+</style></head><body data-astro-cid-tldeq5d5><header data-astro-cid-nen7h5rs><nav data-astro-cid-nen7h5rs><h2 data-astro-cid-nen7h5rs><a href="/" data-astro-cid-nen7h5rs>فرید کرمی</a></h2><div class="internal-links desktop-only" data-astro-cid-nen7h5rs><a href="/" data-astro-cid-nen7h5rs="true">صفحه اصلی</a><a href="/blog" class="active" data-astro-cid-nen7h5rs="true">بلاگ</a><a href="/courses" data-astro-cid-nen7h5rs="true">دوره های آموزشی</a><a href="/products" data-astro-cid-nen7h5rs="true">محصولات</a><a href="/gallery" data-astro-cid-nen7h5rs="true">گالری</a><a href="/about" data-astro-cid-nen7h5rs="true">درباره من</a></div><div class="nav-end" data-astro-cid-nen7h5rs><div class="social-links desktop-only" data-astro-cid-nen7h5rs><a href="https://www.linkedin.com/in/faridkarami" target="_blank" rel="noopener noreferrer" data-astro-cid-nen7h5rs><span class="sr-only" data-astro-cid-nen7h5rs>Follow me on Linkedin</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="22" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-nen7h5rs="true" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://github.com/faridkarami" target="_blank" rel="noopener noreferrer" data-astro-cid-nen7h5rs><span class="sr-only" data-astro-cid-nen7h5rs>Go to my GitHub repo</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="22" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-nen7h5rs="true" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><a href="https://www.youtube.com/@faridkaramio" target="_blank" rel="noopener noreferrer" data-astro-cid-nen7h5rs><span class="sr-only" data-astro-cid-nen7h5rs>Watch my channel on Youtube</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="22" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-nen7h5rs="true" class="lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a></div><details class="mobile-only dropdown" data-astro-cid-nen7h5rs><summary aria-label="منوی موبایل" data-astro-cid-nen7h5rs><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="22" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-nen7h5rs="true" class="lucide lucide-menu"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></summary><div class="dropdown-content" data-astro-cid-nen7h5rs><a href="/" data-astro-cid-nen7h5rs="true">صفحه اصلی</a><a href="/blog" class="active" data-astro-cid-nen7h5rs="true">بلاگ</a><a href="/courses" data-astro-cid-nen7h5rs="true">دوره های آموزشی</a><a href="/products" data-astro-cid-nen7h5rs="true">محصولات</a><a href="/gallery" data-astro-cid-nen7h5rs="true">گالری</a><a href="/about" data-astro-cid-nen7h5rs="true">درباره من</a></div></details><button class="theme-toggle" type="button" data-theme-toggle aria-label="تغییر حالت روشن و تاریک" data-astro-cid-l6lhmie6><span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true" data-astro-cid-l6lhmie6><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="18" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-l6lhmie6="true" class="lucide lucide-sun"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></span><span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true" data-astro-cid-l6lhmie6><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="18" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-l6lhmie6="true" class="lucide lucide-moon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></span></button><script type="module">var e=`theme`,t=()=>{let t=localStorage.getItem(e);return t===`light`||t===`dark`?t:window.matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`},n=t=>{document.documentElement.setAttribute(`data-theme`,t),localStorage.setItem(e,t),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{let n=t===`dark`?`فعال کردن حالت روشن`:`فعال کردن حالت تاریک`;e.setAttribute(`aria-label`,n),e.setAttribute(`aria-pressed`,String(t===`dark`))})},r=()=>{n((document.documentElement.getAttribute(`data-theme`)===`dark`?`dark`:`light`)==`dark`?`light`:`dark`)};n(t()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,r)}),window.matchMedia(`(prefers-color-scheme: dark)`).addEventListener(`change`,t=>{localStorage.getItem(e)||n(t.matches?`dark`:`light`)});</script></div></nav></header><main data-astro-cid-tldeq5d5><article data-astro-cid-tldeq5d5><div class="hero-image" data-astro-cid-tldeq5d5><img src="/assets/twa-bubblewrap-guide.Bs2qbHBK_1v5Mss.webp" alt data-astro-cid-tldeq5d5="true" loading="lazy" decoding="async" width="1020" height="510"></div><div class="prose" data-astro-cid-tldeq5d5><div class="title" data-astro-cid-tldeq5d5><div class="date" data-astro-cid-tldeq5d5><time datetime="2026-06-15T20:30:00.000Z">۲۶ خرداد ۱۴۰۵</time><!-- export const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric',
+}); --><!-- en-us --></div><h1 data-astro-cid-tldeq5d5>راهنمای کامل TWA</h1><hr data-astro-cid-tldeq5d5></div><h1 id="ساخت-اپلیکیشن-اندروید-برای-وب-سایت-با-twa-و-bubblewrap">ساخت اپلیکیشن اندروید برای وب سایت با TWA و Bubblewrap</h1>
+<h2 id="مقدمه">مقدمه</h2>
+<p>اگر یک وب اپلیکیشن واکنش گرا دارید، برای ارائه نسخه اندروید آن لزوما
+مجبور نیستید رابط کاربری را با Kotlin یا Java از ابتدا بازنویسی کنید.
+یکی از راه های ارائه نسخه اندروید، استفاده از <strong>Trusted Web Activity
+(TWA)</strong> است.</p>
+<p>TWA به اپلیکیشن اندروید اجازه می دهد محتوای یک وب اپلیکیشن را با استفاده
+از مرورگر مورد اعتماد، معمولا Chrome، در یک پنجره تمام صفحه اجرا کند. در
+صورت تنظیم صحیح، تجربه کاربر شبیه یک اپلیکیشن اندرویدی است و نوار آدرس
+معمول مرورگر نمایش داده نمی شود.</p>
+<p>در این مقاله، مسیر ساخت نسخه اندروید پروژه FaridKarami برای آدرس
+<code>https://app.faridkarami.ir</code> را با ابزار <strong>Bubblewrap</strong> مرور می کنیم؛ از آماده
+سازی محیط توسعه و ساخت پروژه تا رفع خطاهای Build، امضای APK، تنظیم
+<code>assetlinks.json</code> و انتشار فایل برای دانلود مستقیم.</p>
+<blockquote>
+<p>این راهنما بر اساس تجربه عملی ساخت پروژه نوشته شده است. مسیرها، نسخه
+ابزارها و شناسه بسته ممکن است در پروژه های دیگر متفاوت باشند.</p>
+</blockquote>
+<h2 id="۱-twa-چیست-و-چه-زمانی-انتخاب-مناسبی-است">۱. TWA چیست و چه زمانی انتخاب مناسبی است؟</h2>
+<p>Trusted Web Activity قابلیتی در اکوسیستم اندروید است که محتوای وب را از
+طریق مرورگر مورد اعتماد اجرا می کند.</p>
+<p>در این معماری:</p>
+<ul>
+<li>رابط کاربری و بخش عمده منطق برنامه در وب اپلیکیشن باقی می ماند.</li>
+<li>اپلیکیشن اندروید نقش میزبان اجرای وب اپلیکیشن را دارد.</li>
+<li>بسیاری از تغییرات وب با انتشار نسخه جدید سایت اعمال می شوند و لزوما
+به انتشار APK جدید نیاز ندارند.</li>
+<li>برای تایید رابطه اعتماد بین اپ اندروید و دامنه وب از Digital Asset
+Links استفاده می شود.</li>
+</ul>
+<h3 id="تفاوت-twa-و-webview">تفاوت TWA و WebView</h3>
+<p>در روش WebView، توسعه دهنده یک WebView داخل اپ اندروید قرار می دهد و
+باید جزئیات بیشتری مانند رفتار مرورگر، فایل ها، لینک های خارجی و چرخه
+عمر WebView را مدیریت کند.</p>
+<p>در TWA، محتوا با موتور مرورگر مورد اعتماد اجرا می شود. این روش برای وب
+اپلیکیشن هایی مناسب است که از قبل تجربه کاربری مناسبی روی موبایل دارند و
+می خواهند با حداقل کدنویسی Native نسخه اندروید ارائه کنند.</p>
+<p>TWA جایگزین کامل توسعه Native نیست. اگر برنامه به قابلیت های عمیق سیستم
+عامل، پردازش های پس زمینه پیچیده یا کنترل گسترده Native نیاز داشته باشد،
+توسعه Native یا معماری ترکیبی ممکن است مناسب تر باشد.</p>
+<h3 id="وابستگی-به-chrome">وابستگی به Chrome</h3>
+<p>TWA به یک مرورگر سازگار با Trusted Web Activity نیاز دارد. در بسیاری از
+دستگاه ها این مرورگر Chrome است؛ بنابراین TWA را نباید یک WebView مستقل
+و کاملا جدا از مرورگر در نظر گرفت.</p>
+<h2 id="۲-معماری-پروژه-faridkarami">۲. معماری پروژه FaridKarami</h2>
+<p>در پروژه مورد بررسی دو بخش وب وجود داشت:</p>
+<ul>
+<li>وب سایت اصلی FaridKarami روی <code>https://faridkarami.ir</code> که با آن کاری نداریم.</li>
+<li>وب اپلیکیشن روی <code>https://app.faridkarami.ir</code> که قرار بود در قالب اپ
+اندرویدی اجرا شود.</li>
+</ul>
+<p>هدف، ساخت اپلیکیشن اندروید برای وب اپلیکیشن بود، نه تبدیل وب سایت
+محتوایی اصلی به اپ.</p>
+<p>بنابراین آدرس شروع TWA باید این باشد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>https://app.faridkarami.ir</span></span></code></pre>
+<p>پیش از شروع مطمئن شوید وب اپلیکیشن روی موبایل به درستی کار می کند، HTTPS
+فعال است و مسیرهای اصلی آن بدون خطا باز می شوند.</p>
+<h2 id="۳-آماده-سازی-ابزارهای-مورد-نیاز">۳. آماده سازی ابزارهای مورد نیاز</h2>
+<p>برای ساخت پروژه از Bubblewrap استفاده می کنیم. این ابزار خط فرمان، پروژه
+اندرویدی مبتنی بر TWA را تولید می کند.</p>
+<p>ابتدا Node.js و npm را آماده کنید و سپس Bubblewrap را به صورت سراسری نصب
+کنید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="powershell"><code><span class="line"><span style="color:#E1E4E8">npm install </span><span style="color:#F97583">-</span><span style="color:#E1E4E8">g @bubblewrap</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">cli</span></span></code></pre>
+<p>نسخه نصب شده را بررسی کنید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="powershell"><code><span class="line"><span style="color:#E1E4E8">bubblewrap </span><span style="color:#F97583">--</span><span style="color:#E1E4E8">version</span></span></code></pre>
+<p>Bubblewrap ممکن است برای آماده سازی محیط توسعه، نصب JDK و Android SDK را
+پیشنهاد دهد.</p>
+<h3 id="نصب-jdk">نصب JDK</h3>
+<p>در این پروژه، نصب JDK 17 از طریق خود Bubblewrap انجام شد. مسیر نصب در
+محیط مورد استفاده چنین بود:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>C:\Users\Computer\.bubblewrap\jdk\jdk-17.0.11+9</span></span></code></pre>
+<p>مسیر سیستم شما ممکن است متفاوت باشد.</p>
+<p>در یکی از مراحل، دریافت فایل فشرده JDK Sources با خطای زیر مواجه شد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>cli ERROR end of central directory record signature not found</span></span></code></pre>
+<p>این خطا معمولا به فایل ZIP ناقص یا خراب اشاره دارد. خطای دریافت Sources
+لزوما به معنی نصب نشدن خود JDK نیست. ابتدا وجود JDK و ابزارهای آن را
+بررسی کنید.</p>
+<h3 id="پیدا-کردن-keytool-در-windows">پیدا کردن keytool در Windows</h3>
+<p>برای کار با Keystore به ابزار <code>keytool</code> نیاز داریم. اگر اجرای دستور زیر
+با پیام شناخته نشدن دستور مواجه شد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="powershell"><code><span class="line"><span style="color:#E1E4E8">keytool</span></span></code></pre>
+<p>ممکن است مسیر پوشه <code>bin</code> مربوط به JDK در PATH نباشد.</p>
+<p>برای پیدا کردن فایل اجرایی:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="powershell"><code><span class="line"><span style="color:#79B8FF">Get-ChildItem</span><span style="color:#9ECBFF"> "</span><span style="color:#E1E4E8">$</span><span style="color:#79B8FF">env:</span><span style="color:#E1E4E8">USERPROFILE</span><span style="color:#9ECBFF">\.bubblewrap\jdk"</span><span style="color:#F97583"> -</span><span style="color:#E1E4E8">Recurse </span><span style="color:#F97583">-</span><span style="color:#E1E4E8">Filter </span><span style="color:#79B8FF">keytool.exe</span></span></code></pre>
+<p>سپس می توانید آن را با مسیر کامل اجرا کنید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="powershell"><code><span class="line"><span style="color:#F97583">&amp;</span><span style="color:#9ECBFF"> "</span><span style="color:#E1E4E8">$</span><span style="color:#79B8FF">env:</span><span style="color:#E1E4E8">USERPROFILE</span><span style="color:#9ECBFF">\.bubblewrap\jdk\jdk-17.0.11+9\bin\keytool.exe"</span><span style="color:#F97583"> -</span><span style="color:#E1E4E8">help</span></span></code></pre>
+<h2 id="۴-ساخت-پروژه-twa-با-bubblewrap">۴. ساخت پروژه TWA با Bubblewrap</h2>
+<p>در پوشه ای که می خواهید پروژه اندروید در آن ساخته شود، دستور زیر را اجرا
+کنید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="powershell"><code><span class="line"><span style="color:#E1E4E8">bubblewrap init </span><span style="color:#F97583">--</span><span style="color:#E1E4E8">manifest https:</span><span style="color:#F97583">//</span><span style="color:#E1E4E8">app.faridkarami.ir</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">manifest.webmanifest</span></span></code></pre>
+<p>آدرس Manifest باید با آدرس واقعی فایل Web App Manifest پروژه جایگزین
+شود. اگر فایل در مسیر دیگری قرار دارد، همان مسیر را وارد کنید.</p>
+<p>Bubblewrap اطلاعات مورد نیاز را از Manifest می خواند و برای تکمیل
+تنظیمات پروژه چند سوال می پرسد.</p>
+<h3 id="آدرس-شروع-برنامه">آدرس شروع برنامه</h3>
+<p>آدرس شروع باید وب اپلیکیشن مورد نظر باشد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>https://app.faridkarami.ir</span></span></code></pre>
+<h3 id="آیکون-اصلی-برنامه">آیکون اصلی برنامه</h3>
+<p>برای آیکون اصلی از تصویر با کیفیت و ابعاد مناسب استفاده کنید. تصویر PNG
+با ابعاد 512 در 512 پیکسل انتخاب مناسبی برای آیکون اصلی است.</p>
+<h3 id="monochrome-icon">Monochrome Icon</h3>
+<p>Bubblewrap ممکن است آدرس Monochrome Icon را نیز درخواست کند. این آیکون
+با آیکون اصلی تفاوت دارد و برای موقعیت هایی مانند نمایش آیکون تک رنگ در
+اندروید استفاده می شود.</p>
+<p>در این پروژه ابتدا آدرس <code>favicon.ico</code> وارد شد و خطای زیر رخ داد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>cli ERROR Unsupported MIME type: image/x-icon</span></span></code></pre>
+<p>علت این بود که ورودی با MIME type برابر <code>image/x-icon</code> تشخیص داده شد و
+برای این مورد مناسب نبود.</p>
+<p>راه حل، ارائه یک فایل PNG معتبر است. بهتر است تصویر Monochrome ساده، تک
+رنگ و با پس زمینه شفاف باشد. صرفا خاکستری کردن لوگوی رنگی لزوما یک آیکون
+Monochrome مناسب تولید نمی کند.</p>
+<h3 id="دسترسی-های-برنامه">دسترسی های برنامه</h3>
+<p>Bubblewrap درباره قابلیت ها و دسترسی های مورد نیاز سوال می کند. انتخاب
+هر مورد باید بر اساس نیاز واقعی وب اپلیکیشن باشد. اگر برنامه از موقعیت
+مکانی استفاده می کند، دسترسی Geolocation می تواند لازم باشد.</p>
+<p>در پروژه FaridKarami دسترسی Geolocation فعال شد.</p>
+<h3 id="google-play-billing">Google Play Billing</h3>
+<p>اگر برنامه از پرداخت درون برنامه ای Google Play استفاده نمی کند، فعال
+کردن Play Billing ضرورتی ندارد. در این پروژه این گزینه فعال نشد.</p>
+<h2 id="۵-شناسه-بسته-applicationid-و-namespace">۵. شناسه بسته، applicationId و namespace</h2>
+<p>یکی از تنظیمات مهم پروژه، شناسه یکتای اپلیکیشن اندروید است.</p>
+<p>در پروژه FaridKarami، مقادیر فایل <code>app/build.gradle</code> به این شکل بودند:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>applicationId "ir.faridkarami.app.twa"</span></span>
+<span class="line"><span>namespace "ir.faridkarami.app.twa"</span></span></code></pre>
+<p>این دو مقدار در Gradle کاربردهای مرتبط اما متمایزی دارند. برای تنظیم
+Digital Asset Links، مقدار مهم <code>applicationId</code> است.</p>
+<p><strong>نکته مهم:</strong> مقدار <code>namespace</code> در فایل <code>assetlinks.json</code> با namespace
+در Gradle یکی نیست. در Digital Asset Links مقدار زیر باید دقیقا
+<code>android_app</code> باشد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="color:#9ECBFF">"namespace"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"android_app"</span></span></code></pre>
+<p>در مقابل، مقدار <code>package_name</code> باید با <code>applicationId</code> اپلیکیشن اندروید
+مطابقت داشته باشد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="color:#9ECBFF">"package_name"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"ir.faridkarami.app.twa"</span></span></code></pre>
+<p>برای بررسی مقادیر پروژه در PowerShell:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="powershell"><code><span class="line"><span style="color:#79B8FF">Select-String</span><span style="color:#F97583"> -</span><span style="color:#E1E4E8">Path .\app\build.gradle </span><span style="color:#F97583">-</span><span style="color:#E1E4E8">Pattern </span><span style="color:#9ECBFF">'applicationId|namespace'</span></span></code></pre>
+<p>شناسه بسته را پس از انتشار عمومی بدون برنامه ریزی تغییر ندهید؛ Android
+از آن برای تشخیص هویت اپلیکیشن و به روزرسانی های بعدی استفاده می کند.</p>
+<h2 id="۶-ساخت-keystore-و-امضای-اپلیکیشن">۶. ساخت Keystore و امضای اپلیکیشن</h2>
+<p>فایل APK برای انتشار باید امضا شود. امضای اپلیکیشن اندروید با کلید خصوصی
+موجود در Keystore انجام می شود.</p>
+<p>در این پروژه مسیر Keystore چنین انتخاب شد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>E:\projects\faridkarami\projects\app-faridkarami-android\android.keystore</span></span></code></pre>
+<p>نام Alias نیز این بود:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>android</span></span></code></pre>
+<p>در زمان ساخت Keystore، اطلاعات گواهی مانند نام، واحد سازمانی، سازمان و
+کشور درخواست می شود.</p>
+<h3 id="keystore-را-جدی-بگیرید">Keystore را جدی بگیرید</h3>
+<p>فایل Keystore و رمزهای آن را با دقت نگهداری کنید:</p>
+<ul>
+<li>از فایل Keystore نسخه پشتیبان امن تهیه کنید.</li>
+<li>رمز Keystore و رمز کلید را در محل امن نگهداری کنید.</li>
+<li>فایل Keystore را در مخزن عمومی Git قرار ندهید.</li>
+<li>آن را برای دیگران ارسال نکنید.</li>
+<li>فایل را حذف یا با Keystore جدید جایگزین نکنید.</li>
+</ul>
+<p>اگر نسخه های بعدی را با کلید متفاوت امضا کنید، Android معمولا اجازه نصب
+آن نسخه به عنوان به روزرسانی روی نسخه قبلی را نمی دهد. حفظ کلید اولیه
+برای انتشار نسخه های بعدی اهمیت حیاتی دارد.</p>
+<h2 id="۷-دریافت-sha256-از-گواهی-امضا">۷. دریافت SHA256 از گواهی امضا</h2>
+<p>برای تایید ارتباط بین اپلیکیشن اندروید و دامنه وب، به SHA256 گواهی امضا
+نیاز داریم.</p>
+<p>ابتدا مسیر <code>keytool.exe</code> را پیدا کنید و سپس دستور زیر را اجرا کنید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="powershell"><code><span class="line"><span style="color:#F97583">&amp;</span><span style="color:#9ECBFF"> "</span><span style="color:#E1E4E8">$</span><span style="color:#79B8FF">env:</span><span style="color:#E1E4E8">USERPROFILE</span><span style="color:#9ECBFF">\.bubblewrap\jdk\jdk-17.0.11+9\bin\keytool.exe"</span><span style="color:#F97583"> -</span><span style="color:#E1E4E8">list </span><span style="color:#F97583">-</span><span style="color:#E1E4E8">v </span><span style="color:#F97583">-</span><span style="color:#E1E4E8">keystore </span><span style="color:#9ECBFF">".\android.keystore"</span><span style="color:#F97583"> -</span><span style="color:#E1E4E8">alias android</span></span></code></pre>
+<p>مسیر Keystore و نام Alias را با مقادیر واقعی پروژه خود جایگزین کنید.</p>
+<p>پس از وارد کردن رمز صحیح، خروجی شامل اطلاعات گواهی خواهد بود. خطی با
+عنوان زیر را پیدا کنید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>SHA256: AA:BB:CC:DD:...</span></span></code></pre>
+<p>مقدار SHA256 باید از خروجی واقعی <code>keytool</code> کپی شود؛ آن را دستی حدس نزنید
+یا تغییر ندهید.</p>
+<h3 id="فرمت-صحیح-fingerprint">فرمت صحیح Fingerprint</h3>
+<p>Fingerprint گواهی SHA-256 شامل ۳۲ بایت است که به صورت ۶۴ رقم هگزادسیمال
+و با جداکننده دونقطه نمایش داده می شود. کاراکترهای معتبر هگزادسیمال
+عبارت اند از:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>0-9</span></span>
+<span class="line"><span>A-F</span></span></code></pre>
+<p>بنابراین حروفی مانند <code>R</code> یا <code>T</code> در Fingerprint معتبر نیستند.</p>
+<p>در فایل <code>assetlinks.json</code> خود مقدار Fingerprint را وارد کنید؛ پیشوند
+<code>SHA256:</code> نباید در مقدار JSON قرار بگیرد.</p>
+<p>اگر <code>keytool</code> هشدار غیرمنتظره ای نشان داد، رمز و مسیر Keystore را دوباره
+بررسی کنید و مطمئن شوید اطلاعات گواهی به درستی خوانده شده است. صرفا به
+وجود یک خط خروجی اکتفا نکنید؛ Fingerprint باید متعلق به گواهی واقعی
+باشد.</p>
+<h2 id="۸-ساخت-apk-و-خطاهای-واقعی-build">۸. ساخت APK و خطاهای واقعی Build</h2>
+<p>پس از تکمیل تنظیمات پروژه، دستور Build را اجرا کنید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="powershell"><code><span class="line"><span style="color:#E1E4E8">bubblewrap build</span></span></code></pre>
+<p>این دستور پروژه اندروید را Build می کند و در صورت موفقیت، فایل APK امضا
+شده تولید می شود.</p>
+<p>در این مسیر دو خطای مهم رخ داد.</p>
+<h3 id="خطای-اول-دریافت-نشدن-فهرست-android-sdk">خطای اول: دریافت نشدن فهرست Android SDK</h3>
+<p>در اجرای اولیه Build، Android SDK Manager نتوانست فهرست پکیج ها را
+دریافت کند. بخشی از خروجی چنین بود:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Failed to download any source lists</span></span>
+<span class="line"><span>Failed to find package build-tools;36.1.0</span></span></code></pre>
+<p>این خطا لزوما به معنی اشتباه بودن کد پروژه نیست. ممکن است دریافت فهرست
+پکیج ها به دلیل اختلال شبکه، دسترسی نداشتن به مخزن یا مشکل SDK Manager
+انجام نشده باشد.</p>
+<p>در این پروژه، پس از پذیرفتن License قدیمی Android SDK، دانلود و استخراج
+Build Tools انجام شد.</p>
+<p>برای عیب یابی:</p>
+<ol>
+<li>اتصال شبکه و دسترسی به مخازن Android SDK را بررسی کنید.</li>
+<li>پیام دقیق SDK Manager را بخوانید.</li>
+<li>License های SDK را بررسی و در صورت نیاز تایید کنید.</li>
+<li>مطمئن شوید نسخه Build Tools مورد نیاز پروژه قابل دریافت است.</li>
+<li>بعد از نصب موفق ابزارها، Build را دوباره اجرا کنید.</li>
+</ol>
+<p>پذیرفتن License به تنهایی تضمین نمی کند مشکل شبکه یا دانلود حل شود؛ نصب
+واقعی پکیج ها نیز باید موفق باشد.</p>
+<h3 id="خطای-دوم-ناسازگاری-minsdkversion">خطای دوم: ناسازگاری minSdkVersion</h3>
+<p>پس از عبور از مرحله دریافت SDK، Build با این خطا متوقف شد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>uses-sdk:minSdkVersion 21 cannot be smaller than version 24 declared in library com.google.androidbrowserhelper:androidbrowserhelper:2.7.4</span></span></code></pre>
+<p>این خطا به ناسازگاری حداقل نسخه Android تعریف شده در اپلیکیشن با حداقل
+نسخه مورد نیاز یکی از کتابخانه های آن اشاره می کند.</p>
+<p>کتابخانه زیر حداقل API Level برابر 24 را اعلام کرده بود:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>com.google.androidbrowserhelper:androidbrowserhelper:2.7.4</span></span></code></pre>
+<p>در حالی که مقدار <code>minSdkVersion</code> پروژه 21 بود.</p>
+<p>راه حل انتخاب شده، هماهنگ کردن حداقل نسخه پشتیبانی پروژه با نیاز
+کتابخانه بود. در فایل <code>app/build.gradle</code> مقدار را از 21 به 24 تغییر
+دهید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>defaultConfig {</span></span>
+<span class="line"><span>    minSdkVersion 24</span></span>
+<span class="line"><span>}</span></span></code></pre>
+<p>ساختار دقیق فایل ممکن است در نسخه های مختلف Gradle متفاوت باشد؛ مقدار
+موجود را در محل صحیح پروژه تغییر دهید.</p>
+<p>از راه حل هایی مانند <code>tools:overrideLibrary</code> برای دور زدن این ناسازگاری
+استفاده نکنید، مگر اینکه سازگاری واقعی کتابخانه با نسخه های پایین تر را
+بررسی و اثبات کرده باشید. Override کردن صرفا برای عبور از Build ممکن است
+باعث خطای زمان اجرا شود.</p>
+<p><strong>پیامد این تغییر:</strong> اپلیکیشن روی نسخه های Android پایین تر از API Level
+24 قابل نصب نخواهد بود. پیش از انتشار، این محدودیت را با جامعه کاربران
+هدف خود بسنجید.</p>
+<h3 id="زمان-طولانی-build">زمان طولانی Build</h3>
+<p>ساخت پروژه اندروید ممکن است در اجرای اول زمان بر باشد؛ چون Gradle و
+Android SDK باید وابستگی ها و ابزارهای مورد نیاز را دریافت یا آماده
+کنند. در این تجربه، یک اجرای Build بیش از ۱۲ دقیقه طول کشید و در نهایت
+به دلیل خطای <code>minSdkVersion</code> متوقف شد.</p>
+<p>طولانی شدن Build به تنهایی نشانه هنگ کردن نیست. خروجی ترمینال را بررسی
+کنید و تا زمانی که فرایند فعال است، از بستن آن خودداری کنید.</p>
+<h2 id="۹-فایل-apk-نهایی-کدام-است">۹. فایل APK نهایی کدام است؟</h2>
+<p>پس از Build موفق، Bubblewrap فایل های خروجی را در پوشه پروژه تولید می
+کند.</p>
+<p>برای انتشار مستقیم باید فایل امضا شده را انتخاب کنید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>app-release-signed.apk</span></span></code></pre>
+<p>فایل بدون امضا، مانند <code>app-release-unsigned.apk</code>، برای توزیع مستقیم به
+کاربران انتخاب مناسبی نیست.</p>
+<p>می توانید فایل امضا شده را به نام ساده تری تغییر دهید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>faridkarami.apk</span></span></code></pre>
+<p>تغییر نام فایل APK، امضای دیجیتال یا شناسه بسته داخل آن را تغییر نمی
+دهد. پس از تغییر نام نیز فایل همان اپلیکیشن امضا شده باقی می ماند.</p>
+<p>برای نمونه، می توانید آن را روی وب سایت در این مسیر قرار دهید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>https://app.faridkarami.ir/download/faridkarami.apk</span></span></code></pre>
+<p>یا از دامنه اصلی استفاده کنید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>https://faridkarami.ir/download/faridkarami.apk</span></span></code></pre>
+<h3 id="نکات-انتشار-فایل-apk">نکات انتشار فایل APK</h3>
+<ul>
+<li>فقط APK امضا شده و نهایی را منتشر کنید.</li>
+<li>پس از هر Build جدید، فایل قبلی را با نسخه جدید جایگزین کنید.</li>
+<li>مطمئن شوید فایل از طریق HTTPS قابل دریافت است.</li>
+<li>بهتر است سرور برای فایل APK این Content-Type را ارسال کند:</li>
+</ul>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>application/vnd.android.package-archive</span></span></code></pre>
+<ul>
+<li>پیش از اعلام لینک عمومی، دانلود و نصب فایل را روی یک دستگاه واقعی
+آزمایش کنید.</li>
+<li>نسخه و شماره Build اپلیکیشن را مدیریت کنید تا کاربران بدانند چه نسخه
+ای نصب می کنند.</li>
+</ul>
+<h2 id="۱۰-تنظیم-digital-asset-links-و-فایل-assetlinksjson">۱۰. تنظیم Digital Asset Links و فایل assetlinks.json</h2>
+<p>یکی از مهم ترین مراحل راه اندازی TWA، تایید ارتباط بین اپلیکیشن اندروید
+و دامنه وب است.</p>
+<p>این ارتباط با Digital Asset Links برقرار می شود. فایل تایید باید در مسیر
+مشخصی روی همان دامنه ای قرار بگیرد که TWA از آن اجرا می شود.</p>
+<p>برای پروژه FaridKarami:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>https://app.faridkarami.ir/.well-known/assetlinks.json</span></span></code></pre>
+<p>ساختار فایل به شکل زیر است:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="color:#E1E4E8">[</span></span>
+<span class="line"><span style="color:#E1E4E8">	{</span></span>
+<span class="line"><span style="color:#79B8FF">		"relation"</span><span style="color:#E1E4E8">: [</span><span style="color:#9ECBFF">"delegate_permission/common.handle_all_urls"</span><span style="color:#E1E4E8">],</span></span>
+<span class="line"><span style="color:#79B8FF">		"target"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">			"namespace"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"android_app"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">			"package_name"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"ir.faridkarami.app.twa"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">			"sha256_cert_fingerprints"</span><span style="color:#E1E4E8">: [</span><span style="color:#9ECBFF">"YOUR_REAL_SHA256_FINGERPRINT"</span><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">		}</span></span>
+<span class="line"><span style="color:#E1E4E8">	}</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span></code></pre>
+<p>مقادیر مهم:</p>
+<p>فیلد مقدار یا توضیح</p>
+<hr>
+<p><code>relation</code> رابطه مجاز برای مدیریت لینک های دامنه
+<code>namespace</code> مقدار ثابت <code>android_app</code>
+<code>package_name</code> مقدار دقیق <code>applicationId</code> پروژه
+<code>sha256_cert_fingerprints</code> Fingerprint واقعی گواهی امضای اپلیکیشن</p>
+<p>در این پروژه، <code>applicationId</code> برابر <code>ir.faridkarami.app.twa</code> بود؛ بنابراین
+<code>package_name</code> نیز باید همین مقدار باشد.</p>
+<h3 id="اشتباه-رایج-استفاده-از-namespace-اشتباه">اشتباه رایج: استفاده از namespace اشتباه</h3>
+<p>ممکن است تصور کنید چون در Gradle مقدار زیر وجود دارد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>namespace "ir.faridkarami.app.twa"</span></span></code></pre>
+<p>پس باید همین مقدار را در فیلد <code>namespace</code> فایل <code>assetlinks.json</code> قرار
+دهید. این برداشت اشتباه است.</p>
+<p>در Digital Asset Links، مقدار <code>namespace</code> باید <code>android_app</code> باشد و
+شناسه واقعی برنامه در فیلد <code>package_name</code> قرار می گیرد.</p>
+<h3 id="محل-قرارگیری-فایل">محل قرارگیری فایل</h3>
+<p>در سرور وب، فایل را در این مسیر قرار دهید:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>.well-known/assetlinks.json</span></span></code></pre>
+<p>این فایل باید از آدرس زیر قابل دریافت باشد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>https://app.faridkarami.ir/.well-known/assetlinks.json</span></span></code></pre>
+<p>برای بررسی پاسخ سرور:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="powershell"><code><span class="line"><span style="color:#79B8FF">curl.exe</span><span style="color:#F97583"> -</span><span style="color:#E1E4E8">i https:</span><span style="color:#F97583">//</span><span style="color:#E1E4E8">app.faridkarami.ir</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">.well</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">known</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">assetlinks.json</span></span></code></pre>
+<p>مواردی که باید بررسی شوند:</p>
+<ol>
+<li>پاسخ HTTP موفق، ترجیحا <code>200 OK</code> باشد.</li>
+<li>محتوای پاسخ JSON معتبر باشد.</li>
+<li>آدرس به صفحه دیگری Redirect نشود یا محتوای HTML برنگرداند.</li>
+<li><code>package_name</code> دقیقا با <code>applicationId</code> یکسان باشد.</li>
+<li>Fingerprint دقیقا متعلق به گواهی امضای APK باشد.</li>
+</ol>
+<p>تا زمانی که Fingerprint واقعی به دست نیامده است، فایل نمونه را منتشر
+نکنید.</p>
+<h2 id="۱۱-تفاوت-گواهی-امضای-محلی-و-google-play-app-signing">۱۱. تفاوت گواهی امضای محلی و Google Play App Signing</h2>
+<p>اگر APK را مستقیما از وب سایت توزیع می کنید، Fingerprint گواهی ای که APK
+را با آن امضا کرده اید اهمیت دارد.</p>
+<p>اما اگر اپلیکیشن را در Google Play منتشر کنید و قابلیت <strong>Play App
+Signing</strong> فعال باشد، ممکن است گواهی امضای APK دانلود شده از Google Play
+با گواهی Upload Key شما متفاوت باشد.</p>
+<p>در این حالت، برای اینکه TWA در نسخه نصب شده از Google Play نیز دامنه را
+معتبر تشخیص دهد، باید Fingerprint گواهی App Signing مربوط به Google Play
+را هم در <code>assetlinks.json</code> قرار دهید.</p>
+<p>اگر هم نسخه مستقیم سایت و هم نسخه Google Play را ارائه می کنید، ممکن است
+لازم باشد Fingerprint هر دو گواهی در آرایه <code>sha256_cert_fingerprints</code>
+قرار بگیرد.</p>
+<p>بنابراین پیش از انتشار عمومی مشخص کنید APK با کدام کلید امضا شده و
+کاربران آن را از چه مسیری دریافت می کنند.</p>
+<h2 id="۱۲-چک-لیست-نهایی-پیش-از-انتشار">۱۲. چک لیست نهایی پیش از انتشار</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> وب اپلیکیشن <code>https://app.faridkarami.ir</code> روی موبایل به درستی کار می
+کند.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Web App Manifest معتبر و در دسترس است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> آیکون اصلی برنامه با کیفیت مناسب انتخاب شده است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Monochrome Icon با فرمت و MIME type مناسب ارائه شده است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> شناسه <code>applicationId</code> نهایی و ثابت است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> مقدار <code>minSdkVersion</code> با نیاز کتابخانه های پروژه سازگار است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Keystore و رمزهای آن در محل امن نگهداری می شوند.</li>
+<li class="task-list-item"><input type="checkbox" disabled> فایل APK با موفقیت Build و امضا شده است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Fingerprint واقعی SHA256 از گواهی امضا استخراج شده است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> فایل <code>assetlinks.json</code> در مسیر <code>/.well-known/</code> قرار دارد.</li>
+<li class="task-list-item"><input type="checkbox" disabled> <code>package_name</code> با <code>applicationId</code> مطابقت دارد.</li>
+<li class="task-list-item"><input type="checkbox" disabled> <code>namespace</code> در <code>assetlinks.json</code> برابر <code>android_app</code> است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> فایل <code>assetlinks.json</code> با HTTP 200 و JSON معتبر پاسخ می دهد.</li>
+<li class="task-list-item"><input type="checkbox" disabled> APK روی یک دستگاه واقعی نصب و اجرا شده است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> لینک دانلود مستقیم از بیرون محیط توسعه قابل دریافت است.</li>
+</ul>
+<h2 id="۱۳-عیب-یابی-سریع">۱۳. عیب یابی سریع</h2>
+<div class="table-wrapper">
+  <table>
+    <thead>
+      <tr>
+        <th>خطا یا مشکل</th><th>علت احتمالی</th><th>راهکار</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>Unsupported MIME type: image/x-icon</code></td><td>استفاده از فایل ICO برای Monochrome Icon</td><td>ارائه یک فایل PNG معتبر</td>
+      </tr>
+      <tr>
+        <td><code>end of central directory record signature not found</code></td><td>فایل ZIP ناقص یا خراب</td><td>بررسی دانلود و دریافت مجدد فایل مورد نیاز</td>
+      </tr>
+      <tr>
+        <td><code>keytool is not recognized</code></td><td>مسیر JDK در PATH تعریف نشده است</td><td>اجرای <code>keytool</code> با مسیر کامل</td>
+      </tr>
+      <tr>
+        <td><code>Failed to download any source lists</code></td><td>مشکل در دریافت فهرست Android SDK</td><td>بررسی شبکه، SDK Manager و License ها</td>
+      </tr>
+      <tr>
+        <td><code>Failed to find package build-tools</code></td><td>Build Tools مورد نیاز نصب نشده یا قابل دریافت نیست</td><td>نصب نسخه مورد نیاز SDK</td>
+      </tr>
+      <tr>
+        <td><code>minSdkVersion 21 cannot be smaller than version 24</code></td><td>حداقل API اپلیکیشن از نیاز کتابخانه پایین تر است</td><td>تنظیم <code>minSdkVersion</code> روی مقدار سازگار</td>
+      </tr>
+      <tr>
+        <td>نمایش نوار آدرس یا تایید نشدن TWA</td><td>احتمال مشکل در Digital Asset Links</td><td>بررسی <code>package_name</code>، <code>SHA256</code> و مسیر فایل</td>
+      </tr>
+      <tr>
+        <td>نصب نشدن APK به عنوان Update</td><td>احتمال تفاوت کلید امضا یا شناسه بسته</td><td>بررسی Keystore و <code>applicationId</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h2 id="نتیجه-گیری">نتیجه گیری</h2>
+<p>با استفاده از TWA و Bubblewrap می توان برای یک وب اپلیکیشن آماده، نسخه
+اندرویدی ساخت؛ بدون اینکه لازم باشد رابط کاربری آن را از ابتدا با فناوری
+Native بازنویسی کنیم.</p>
+<p>با این حال، ساخت APK تنها بخشی از کار است. آماده سازی آیکون ها، تنظیم
+شناسه بسته، انتخاب حداقل نسخه Android، نگهداری Keystore، امضای خروجی و
+پیکربندی Digital Asset Links همگی در اجرای صحیح و انتشار نسخه نهایی نقش
+دارند.</p>
+<p>در تجربه ساخت اپلیکیشن FaridKarami، مهم ترین چالش ها شامل خطای MIME type برای
+آیکون ICO، مشکل دریافت Android SDK، ناسازگاری <code>minSdkVersion</code> با
+کتابخانه Android Browser Helper و تشخیص تفاوت <code>namespace</code> در Gradle با
+<code>namespace</code> در فایل Digital Asset Links بود.</p>
+<p>در نهایت، خروجی مناسب برای توزیع مستقیم، فایل APK امضا شده است؛ فایلی که
+می توان آن را با نامی ساده مانند <code>faridkarami.apk</code> روی وب سایت قرار داد و از
+طریق یک لینک HTTPS در اختیار کاربران گذاشت.</p>
+<p><strong>توصیه پایانی:</strong> پیش از انتشار عمومی، نصب و اجرای نسخه نهایی را روی چند
+دستگاه واقعی آزمایش کنید و از Keystore نسخه پشتیبان امن داشته باشید. این
+دو اقدام از بسیاری از مشکلات انتشار و به روزرسانی آینده جلوگیری می کنند.</p>
+</div></article></main><footer data-astro-cid-jo6i4kqk>&copy; تمامی حقوق این وب سایت متعلق به فرید کرمی می باشد.<br data-astro-cid-jo6i4kqk>2026<div class="social-links" data-astro-cid-jo6i4kqk><a href="https://www.linkedin.com/in/faridkarami" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Follow me on Linkedin</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://x.com/faridkaramio" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Follow me on X</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a><a href="https://www.facebook.com/faridkaramio" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Follow me on Facebook</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a><a href="https://www.instagram.com/faridkaramio" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Follow me on Instagram</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a><a href="https://t.me/faridkaramio" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Follow me on Telegram</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg></a><a href="https://github.com/faridkarami" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Go to my GitHub repo</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><a href="https://www.npmjs.com/~faridkarami" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Go to my NPM page</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-hexagon"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg></a><a href="https://www.youtube.com/@faridkaramio" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Watch my channel on Youtube</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a><a href="https://www.aparat.com/faridkaramio" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Watch my channel on Aparat</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-film"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M7 3v18"></path><path d="M3 7.5h4"></path><path d="M3 12h18"></path><path d="M3 16.5h4"></path><path d="M17 3v18"></path><path d="M17 7.5h4"></path><path d="M17 16.5h4"></path></svg></a><a href="/rss.xml" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>RSS Feed</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></div><div class="text-container" data-astro-cid-6bctqxxv><span class="letter" data-astro-cid-6bctqxxv>F</span><span class="letter" data-astro-cid-6bctqxxv>a</span><span class="letter" data-astro-cid-6bctqxxv>r</span><span class="letter" data-astro-cid-6bctqxxv>i</span><span class="letter" data-astro-cid-6bctqxxv>d</span><span class="letter" style="width: 10px;" data-astro-cid-6bctqxxv></span><span class="letter" data-astro-cid-6bctqxxv>K</span><span class="letter" data-astro-cid-6bctqxxv>a</span><span class="letter" data-astro-cid-6bctqxxv>r</span><span class="letter" data-astro-cid-6bctqxxv>a</span><span class="letter" data-astro-cid-6bctqxxv>m</span><span class="letter" data-astro-cid-6bctqxxv>i</span></div></footer></body></html>
