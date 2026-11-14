@@ -1,0 +1,952 @@
+<!DOCTYPE html><html lang="fa" dir="rtl" data-astro-cid-tldeq5d5><head><!-- Prevent theme flash before first paint --><script>
+	(function () {
+		try {
+			var stored = localStorage.getItem('theme');
+			var theme =
+				stored === 'light' || stored === 'dark'
+					? stored
+					: window.matchMedia('(prefers-color-scheme: dark)').matches
+						? 'dark'
+						: 'light';
+			document.documentElement.setAttribute('data-theme', theme);
+		} catch (e) {
+			document.documentElement.setAttribute('data-theme', 'light');
+		}
+	})();
+</script><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" href="/favicon.ico"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="فرید کرمی" href="https://faridkarami.ir/rss.xml"><meta name="generator" content="Astro v7.3.5"><style>@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/65139d19f640333b.ttf") format("truetype");font-display:swap;font-weight:100;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/1596465ad06f66b8.ttf") format("truetype");font-display:swap;font-weight:200;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/49f5e1cfe7c7b5da.ttf") format("truetype");font-display:swap;font-weight:300;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/4960ffc0cf26ac45.ttf") format("truetype");font-display:swap;font-weight:400;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/8a52d37c17ac8dff.ttf") format("truetype");font-display:swap;font-weight:500;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/11fd06a0899e79b6.ttf") format("truetype");font-display:swap;font-weight:600;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/52d21d992a440ab4.ttf") format("truetype");font-display:swap;font-weight:700;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/3617fcaaca357b50.ttf") format("truetype");font-display:swap;font-weight:800;font-style:normal;}@font-face{font-family:Primary-c1310e4828f8d8fc;src:url("/assets/fonts/a1f1f02040c6e35b.ttf") format("truetype");font-display:swap;font-weight:900;font-style:normal;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:100;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:200;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:300;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:400;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:500;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial";src:local("Arial");font-display:swap;font-weight:600;font-style:normal;size-adjust:121.1303%;ascent-override:113.4315%;descent-override:60.9261%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial Bold";src:local("Arial Bold");font-display:swap;font-weight:700;font-style:normal;size-adjust:112.5046%;ascent-override:122.1284%;descent-override:65.5973%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial Bold";src:local("Arial Bold");font-display:swap;font-weight:800;font-style:normal;size-adjust:112.5046%;ascent-override:122.1284%;descent-override:65.5973%;line-gap-override:0%;}@font-face{font-family:"Primary-c1310e4828f8d8fc fallback: Arial Bold";src:local("Arial Bold");font-display:swap;font-weight:900;font-style:normal;size-adjust:112.5046%;ascent-override:122.1284%;descent-override:65.5973%;line-gap-override:0%;}:root{--font-primary:Primary-c1310e4828f8d8fc,"Primary-c1310e4828f8d8fc fallback: Arial","Primary-c1310e4828f8d8fc fallback: Arial Bold",system-ui,sans-serif;}</style><link rel="preload" href="/assets/fonts/65139d19f640333b.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/1596465ad06f66b8.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/49f5e1cfe7c7b5da.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/4960ffc0cf26ac45.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/8a52d37c17ac8dff.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/11fd06a0899e79b6.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/52d21d992a440ab4.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/3617fcaaca357b50.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="/assets/fonts/a1f1f02040c6e35b.ttf" as="font" type="font/ttf" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://faridkarami.ir/blog/cell-based-architecture-guide/"><!-- Primary Meta Tags --><title>راهنمای جامع Cell-Based Architecture</title><meta name="description" content="مفاهیم، طراحی، ابزارها، انتخاب فناوری و مسیر پیاده سازی"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://faridkarami.ir/blog/cell-based-architecture-guide/"><meta property="og:title" content="راهنمای جامع Cell-Based Architecture"><meta property="og:description" content="مفاهیم، طراحی، ابزارها، انتخاب فناوری و مسیر پیاده سازی"><meta property="og:image" content="https://faridkarami.ir/assets/default.3rEwbyG8.jpg"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><script type="module">function e(){let e=document.querySelectorAll(`a`),t=window.location.hostname;e.forEach(e=>{let n=e.getAttribute(`href`);if(n&&(n.startsWith(`http://`)||n.startsWith(`https://`)||n.startsWith(`//`)))try{new URL(n,window.location.href).hostname!==t&&(e.setAttribute(`target`,`_blank`),e.setAttribute(`rel`,`noopener noreferrer`))}catch{}})}e();</script><link rel="stylesheet" href="/assets/BaseHead.CfFMrezF.css"><link rel="stylesheet" href="/assets/Header.2Hvj5ZSN.css"><style>main[data-astro-cid-tldeq5d5]{width:calc(100% - 2em);max-width:100%;margin:0 auto}.hero-image[data-astro-cid-tldeq5d5]{width:100%}.hero-image[data-astro-cid-tldeq5d5] img[data-astro-cid-tldeq5d5]{box-shadow:var(--box-shadow);border-radius:12px;margin:0 auto;display:block}.prose[data-astro-cid-tldeq5d5]{width:1200px;max-width:calc(100% - 2em);color:rgb(var(--text));margin:auto;padding:1em}.title[data-astro-cid-tldeq5d5]{text-align:center;margin-bottom:1em;padding:1em 0;line-height:1}.title[data-astro-cid-tldeq5d5] h1[data-astro-cid-tldeq5d5]{margin:0 0 .5em}.date[data-astro-cid-tldeq5d5]{color:rgb(var(--text-muted));margin-bottom:.5em}.last-updated-on[data-astro-cid-tldeq5d5]{font-style:italic}
+</style></head><body data-astro-cid-tldeq5d5><header data-astro-cid-nen7h5rs><nav data-astro-cid-nen7h5rs><h2 data-astro-cid-nen7h5rs><a href="/" data-astro-cid-nen7h5rs>فرید کرمی</a></h2><div class="internal-links desktop-only" data-astro-cid-nen7h5rs><a href="/" data-astro-cid-nen7h5rs="true">صفحه اصلی</a><a href="/blog" class="active" data-astro-cid-nen7h5rs="true">بلاگ</a><a href="/courses" data-astro-cid-nen7h5rs="true">دوره های آموزشی</a><a href="/products" data-astro-cid-nen7h5rs="true">محصولات</a><a href="/gallery" data-astro-cid-nen7h5rs="true">گالری</a><a href="/about" data-astro-cid-nen7h5rs="true">درباره من</a></div><div class="nav-end" data-astro-cid-nen7h5rs><div class="social-links desktop-only" data-astro-cid-nen7h5rs><a href="https://www.linkedin.com/in/faridkarami" target="_blank" rel="noopener noreferrer" data-astro-cid-nen7h5rs><span class="sr-only" data-astro-cid-nen7h5rs>Follow me on Linkedin</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="22" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-nen7h5rs="true" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://github.com/faridkarami" target="_blank" rel="noopener noreferrer" data-astro-cid-nen7h5rs><span class="sr-only" data-astro-cid-nen7h5rs>Go to my GitHub repo</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="22" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-nen7h5rs="true" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><a href="https://www.youtube.com/@faridkaramio" target="_blank" rel="noopener noreferrer" data-astro-cid-nen7h5rs><span class="sr-only" data-astro-cid-nen7h5rs>Watch my channel on Youtube</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="22" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-nen7h5rs="true" class="lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a></div><details class="mobile-only dropdown" data-astro-cid-nen7h5rs><summary aria-label="منوی موبایل" data-astro-cid-nen7h5rs><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="22" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-nen7h5rs="true" class="lucide lucide-menu"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></summary><div class="dropdown-content" data-astro-cid-nen7h5rs><a href="/" data-astro-cid-nen7h5rs="true">صفحه اصلی</a><a href="/blog" class="active" data-astro-cid-nen7h5rs="true">بلاگ</a><a href="/courses" data-astro-cid-nen7h5rs="true">دوره های آموزشی</a><a href="/products" data-astro-cid-nen7h5rs="true">محصولات</a><a href="/gallery" data-astro-cid-nen7h5rs="true">گالری</a><a href="/about" data-astro-cid-nen7h5rs="true">درباره من</a></div></details><button class="theme-toggle" type="button" data-theme-toggle aria-label="تغییر حالت روشن و تاریک" data-astro-cid-l6lhmie6><span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true" data-astro-cid-l6lhmie6><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="18" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-l6lhmie6="true" class="lucide lucide-sun"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></span><span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true" data-astro-cid-l6lhmie6><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="18" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-l6lhmie6="true" class="lucide lucide-moon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></span></button><script type="module">var e=`theme`,t=()=>{let t=localStorage.getItem(e);return t===`light`||t===`dark`?t:window.matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`},n=t=>{document.documentElement.setAttribute(`data-theme`,t),localStorage.setItem(e,t),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{let n=t===`dark`?`فعال کردن حالت روشن`:`فعال کردن حالت تاریک`;e.setAttribute(`aria-label`,n),e.setAttribute(`aria-pressed`,String(t===`dark`))})},r=()=>{n((document.documentElement.getAttribute(`data-theme`)===`dark`?`dark`:`light`)==`dark`?`light`:`dark`)};n(t()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,r)}),window.matchMedia(`(prefers-color-scheme: dark)`).addEventListener(`change`,t=>{localStorage.getItem(e)||n(t.matches?`dark`:`light`)});</script></div></nav></header><main data-astro-cid-tldeq5d5><article data-astro-cid-tldeq5d5><div class="hero-image" data-astro-cid-tldeq5d5><img src="/assets/cell-based-architecture-guide.CwphftsI_Z1Paodg.webp" alt data-astro-cid-tldeq5d5="true" loading="lazy" decoding="async" width="1020" height="510"></div><div class="prose" data-astro-cid-tldeq5d5><div class="title" data-astro-cid-tldeq5d5><div class="date" data-astro-cid-tldeq5d5><time datetime="2026-10-23T20:30:00.000Z">۲ آبان ۱۴۰۵</time><!-- export const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric',
+}); --><!-- en-us --></div><h1 data-astro-cid-tldeq5d5>راهنمای جامع Cell-Based Architecture</h1><hr data-astro-cid-tldeq5d5></div><h2 id="فهرست-مطالب">فهرست مطالب</h2>
+<ol>
+<li><a href="#1-cell-based-architecture-%DA%86%DB%8C%D8%B3%D8%AA">Cell-Based Architecture چیست؟</a></li>
+<li><a href="#2-%DA%86%D8%B1%D8%A7-%D8%A8%D9%87-%D8%A7%DB%8C%D9%86-%D9%85%D8%B9%D9%85%D8%A7%D8%B1%DB%8C-%D9%86%DB%8C%D8%A7%D8%B2-%D8%AF%D8%A7%D8%B1%DB%8C%D9%85">چرا به این معماری نیاز داریم؟</a></li>
+<li><a href="#3-%D8%A7%D8%AC%D8%B2%D8%A7%DB%8C-%D8%A7%D8%B5%D9%84%DB%8C-%D9%85%D8%B9%D9%85%D8%A7%D8%B1%DB%8C">اجزای اصلی معماری</a></li>
+<li><a href="#4-%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C-%DB%8C%DA%A9-cell">طراحی یک Cell</a></li>
+<li><a href="#5-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8-%D8%B2%D8%A8%D8%A7%D9%86-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C">انتخاب زبان برنامه نویسی</a></li>
+<li><a href="#6-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8-database-%D9%88-%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%DA%98%DB%8C-%D8%AF%D8%A7%D8%AF%D9%87">انتخاب Database و استراتژی
+داده</a></li>
+<li><a href="#7-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1%D9%87%D8%A7-%D9%88-%D9%81%D9%86%D8%A7%D9%88%D8%B1%DB%8C-%D9%87%D8%A7%DB%8C-%D9%BE%DB%8C%D8%B4%D9%86%D9%87%D8%A7%D8%AF%DB%8C">ابزارها و فناوری های پیشنهادی</a></li>
+<li><a href="#8-routing-%D9%88-%D8%AA%D8%AE%D8%B5%DB%8C%D8%B5-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%A7%D9%86-%D8%A8%D9%87-cell%D9%87%D8%A7">Routing و تخصیص کاربران به
+Cellها</a></li>
+<li><a href="#9-%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%A8%DB%8C%D9%86-cell%D9%87%D8%A7-%D9%88-%D8%AF%D8%A7%D8%AF%D9%87-%D9%87%D8%A7%DB%8C-%D8%B3%D8%B1%D8%A7%D8%B3%D8%B1%DB%8C">ارتباط بین Cellها و داده های
+سراسری</a></li>
+<li><a href="#10-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D8%AE%D8%B1%D8%A7%D8%A8%DB%8C-%D9%88-%D8%A8%D8%A7%D8%B2%DB%8C%D8%A7%D8%A8%DB%8C">مدیریت خرابی و بازیابی</a></li>
+<li><a href="#11-deployment-%D9%88-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%DA%86%D8%B1%D8%AE%D9%87-%D8%B9%D9%85%D8%B1-cell%D9%87%D8%A7">Deployment و مدیریت چرخه عمر
+Cellها</a></li>
+<li><a href="#12-%D8%A7%D9%85%D9%86%DB%8C%D8%AA-%D9%88-%D8%AC%D8%AF%D8%A7%D8%B3%D8%A7%D8%B2%DB%8C">امنیت و جداسازی</a></li>
+<li><a href="#13-%D9%85%D8%B2%D8%A7%DB%8C%D8%A7-%D9%85%D8%B9%D8%A7%DB%8C%D8%A8-%D9%88-anti-pattern%D9%87%D8%A7">مزایا، معایب و Anti-Patternها</a></li>
+<li><a href="#14-%D9%85%D9%82%D8%A7%DB%8C%D8%B3%D9%87-%D8%A8%D8%A7-%D9%85%D8%B9%D9%85%D8%A7%D8%B1%DB%8C-%D9%87%D8%A7%DB%8C-%D8%AF%DB%8C%DA%AF%D8%B1">مقایسه با معماری های دیگر</a></li>
+<li><a href="#15-%D9%86%D9%85%D9%88%D9%86%D9%87-%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C-%D8%A8%D8%B1%D8%A7%DB%8C-%DB%8C%DA%A9-%D9%88%D8%A8-%D8%B3%D8%A7%DB%8C%D8%AA">نمونه طراحی برای یک وب سایت</a></li>
+<li><a href="#16-%D9%85%D8%B3%DB%8C%D8%B1-%D9%85%D9%87%D8%A7%D8%AC%D8%B1%D8%AA-%D9%85%D8%B1%D8%AD%D9%84%D9%87-%D8%A7%DB%8C">مسیر مهاجرت مرحله ای</a></li>
+<li><a href="#17-%DA%86%DA%A9-%D9%84%DB%8C%D8%B3%D8%AA-%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C-%D9%88-%D8%A7%D8%AC%D8%B1%D8%A7">چک لیست طراحی و اجرا</a></li>
+<li><a href="#18-%D9%85%D9%86%D8%A7%D8%A8%D8%B9-%D9%85%D8%B7%D8%A7%D9%84%D8%B9%D8%A7%D8%AA%DB%8C">منابع مطالعاتی</a></li>
+</ol>
+<hr>
+<h2 id="1-cell-based-architecture-چیست">1. Cell-Based Architecture چیست؟</h2>
+<p><strong>Cell-Based Architecture</strong> یک الگوی طراحی برای سیستم های توزیع شده است
+که در آن کل Workload نرم افزار به چند واحد مستقل به نام <strong>Cell</strong> تقسیم
+می شود. هر Cell مسئول پردازش بخشی از درخواست ها یا کاربران است و تا حد
+امکان تمام اجزای لازم برای انجام کار خود را در اختیار دارد.</p>
+<p>هر Cell را می توان یک نمونه عملیاتی مستقل از کل یا بخش اصلی سیستم در نظر
+گرفت. این نمونه معمولا شامل لایه اجرای برنامه، ذخیره سازی، Cache، پردازش
+های پس زمینه، تنظیمات عملیاتی و ابزارهای پایش است.</p>
+<p>هدف اصلی فقط افزایش ظرفیت نیست؛ هدف مهم تر، <strong>محدود کردن محدوده اثر
+خرابی (Blast Radius)</strong> است. اگر یک Cell به دلیل Bug، بار بیش از حد، خطای
+Deployment یا مشکل زیرساختی از دسترس خارج شود، اختلال باید به درخواست ها
+و کاربران همان Cell محدود بماند و سایر Cellها بتوانند به کار ادامه دهند.</p>
+<h3 id="مثال-ساده">مثال ساده</h3>
+<p>فرض کنیم یک سرویس 100,000 کاربر دارد. به جای اینکه همه کاربران به یک
+مجموعه مشترک از Backend و Database وابسته باشند، کاربران میان 10 Cell
+تقسیم می شوند.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>                         USERS</span></span>
+<span class="line"><span>                           |</span></span>
+<span class="line"><span>                     CELL ROUTER</span></span>
+<span class="line"><span>                           |</span></span>
+<span class="line"><span>          +----------------+----------------+</span></span>
+<span class="line"><span>          |                |                |</span></span>
+<span class="line"><span>        CELL 1           CELL 2           CELL 3</span></span>
+<span class="line"><span>          |                |                |</span></span>
+<span class="line"><span>      Application      Application      Application</span></span>
+<span class="line"><span>      Database         Database         Database</span></span>
+<span class="line"><span>      Cache            Cache            Cache</span></span>
+<span class="line"><span>      Workers          Workers          Workers</span></span>
+<span class="line"><span>          |                |                |</span></span>
+<span class="line"><span>          +----------------+----------------+</span></span>
+<span class="line"><span>                           |</span></span>
+<span class="line"><span>                       ... CELL N</span></span></code></pre>
+<p>اگر Cell 2 دچار مشکل شود، کاربران اختصاص داده شده به Cell 2 ممکن است
+اختلال را تجربه کنند، اما کاربران Cellهای دیگر همچنان سرویس می گیرند.</p>
+<p>این معماری تضمین نمی کند که هیچ خرابی سراسری رخ ندهد؛ بلکه طراحی می شود
+تا احتمال و دامنه چنین خرابی هایی کاهش یابد.</p>
+<h3 id="مفاهیم-کلیدی">مفاهیم کلیدی</h3>
+<ul>
+<li><strong>Cell:</strong> واحد مستقل اجرای Workload.</li>
+<li><strong>Cell Router:</strong> لایه سبک برای هدایت درخواست به Cell درست.</li>
+<li><strong>Partition Key:</strong> کلیدی که بر اساس آن کاربران یا درخواست ها تقسیم
+می شوند.</li>
+<li><strong>Control Plane:</strong> بخش مدیریتی برای ساخت، پیکربندی، انتقال و مدیریت
+Cellها.</li>
+<li><strong>Data Plane:</strong> بخشی که درخواست های اصلی کاربران را پردازش می کند.</li>
+<li><strong>Blast Radius:</strong> محدوده ای از سیستم که تحت تاثیر یک خرابی قرار می
+گیرد.</li>
+<li><strong>Cell Rebalancing:</strong> انتقال کنترل شده کاربران یا بار میان Cellها.</li>
+<li><strong>Cell Sizing:</strong> تعیین ظرفیت و اندازه مناسب هر Cell.</li>
+</ul>
+<hr>
+<h2 id="2-چرا-به-این-معماری-نیاز-داریم">2. چرا به این معماری نیاز داریم؟</h2>
+<p>در معماری متمرکز، ممکن است چندین نسخه از Backend داشته باشیم، اما همه آن
+ها همچنان از Database، Queue یا منابع مشترک استفاده کنند. در چنین شرایطی
+افزایش تعداد سرورها لزوما محدوده خرابی را کوچک نمی کند.</p>
+<p>برای نمونه:</p>
+<ul>
+<li>افزایش ناگهانی ترافیک ممکن است Database مشترک را از کار بیندازد.</li>
+<li>یک Migration اشتباه می تواند تمام کاربران را تحت تاثیر قرار دهد.</li>
+<li>یک نسخه معیوب از برنامه ممکن است روی تمام Instanceها منتشر شود.</li>
+<li>یک Tenant پرمصرف می تواند منابع سایر Tenantها را مصرف کند.</li>
+<li>اختلال در یک سرویس مشترک می تواند چندین بخش ظاهرا مستقل را همزمان
+مختل کند.</li>
+</ul>
+<p>Cell-Based Architecture تلاش می کند مرزهای خرابی را به واحدهای کوچک تر و
+قابل کنترل تبدیل کند.</p>
+<h3 id="fault-isolation">Fault Isolation</h3>
+<p>هر Cell باید تا حد امکان منابع و داده های عملیاتی مستقل داشته باشد.
+استقلال صرفا به معنی اجرای چند Container جدا نیست. اگر تمام Containerها
+به یک Database مشترک و یک Queue بدون محدودیت وابسته باشند، آن منابع
+همچنان نقطه خرابی مشترک هستند.</p>
+<h3 id="static-stability">Static Stability</h3>
+<p>یک Cell سالم باید بتواند بدون نیاز دائمی به هماهنگی با سایر Cellها،
+کارهای اصلی خود را انجام دهد. وابستگی های بین Cellها باید کم، مشخص و
+کنترل شده باشند.</p>
+<h3 id="مقیاس-پذیری">مقیاس پذیری</h3>
+<p>وقتی ظرفیت یک Cell کافی نیست، می توان Cell دیگری ایجاد کرد و بخشی از
+کاربران یا Workload جدید را به آن اختصاص داد. این کار به جای بزرگ کردن
+بی حد و مرز یک محیط مشترک، ظرفیت را در واحدهای قابل تکرار افزایش می دهد.</p>
+<hr>
+<h2 id="3-اجزای-اصلی-معماری">3. اجزای اصلی معماری</h2>
+<h3 id="31-cell-router">3.1. Cell Router</h3>
+<p>Cell Router نقطه تصمیم گیری برای انتخاب مقصد درخواست است. این لایه باید
+ساده، سریع، قابل اتکا و تا حد ممکن بدون Business Logic باشد.</p>
+<p>وظایف اصلی:</p>
+<ol>
+<li>استخراج Partition Key از درخواست یا هویت احراز شده.</li>
+<li>یافتن Cell مربوط به آن Partition Key.</li>
+<li>هدایت درخواست به Endpoint آن Cell.</li>
+<li>رعایت وضعیت سلامت و سیاست های Routing.</li>
+<li>مدیریت Cache اطلاعات Mapping.</li>
+<li>جلوگیری از هدایت درخواست های جدید به Cell ناسالم.</li>
+</ol>
+<p>نمونه مفهومی:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Request:</span></span>
+<span class="line"><span>  GET https://faridkarami.ir/api/profile</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Authenticated User:</span></span>
+<span class="line"><span>  user_id = 12045</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Router:</span></span>
+<span class="line"><span>  lookup(user_id) -&gt; cell-2</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Destination:</span></span>
+<span class="line"><span>  https://cell-2.internal/api/profile</span></span></code></pre>
+<p>این نمونه صرفا یک الگوی مفهومی است؛ سایت عمومی لزوما نباید به این شکل
+مستقیما به Cellها Route شود.</p>
+<p><strong>نکته طراحی:</strong> Router نباید برای هر درخواست به یک سرویس مدیریتی کند
+وابسته باشد. اطلاعات Mapping می تواند در حافظه یا Cache محلی Router
+نگهداری شود و با مکانیزم مشخص به روز شود. Router نیز باید چند Replica
+مستقل داشته باشد تا خودش به Single Point of Failure تبدیل نشود.</p>
+<h3 id="32-cells">3.2. Cells</h3>
+<p>هر Cell یک محیط عملیاتی مستقل است. بسته به نوع Workload ممکن است شامل
+موارد زیر باشد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>CELL 1</span></span>
+<span class="line"><span>├── Ingress / Internal Load Balancer</span></span>
+<span class="line"><span>├── Application API</span></span>
+<span class="line"><span>├── Background Workers</span></span>
+<span class="line"><span>├── Primary Database</span></span>
+<span class="line"><span>├── Cache</span></span>
+<span class="line"><span>├── Message Queue</span></span>
+<span class="line"><span>├── Object Storage Namespace</span></span>
+<span class="line"><span>├── Configuration</span></span>
+<span class="line"><span>├── Secrets</span></span>
+<span class="line"><span>└── Health Checks and Telemetry</span></span></code></pre>
+<p>همه Cellها لازم نیست دقیقا همین اجزا را داشته باشند. اصل مهم این است که
+هر Cell برای پردازش مسئولیت خود به منابع مشترک شکننده وابسته نباشد.</p>
+<h3 id="33-control-plane">3.3. Control Plane</h3>
+<p>Control Plane مسئول عملیات مدیریتی است، نه پردازش عادی درخواست های
+کاربران.</p>
+<p>وظایف متداول:</p>
+<ul>
+<li>ثبت و Provision کردن Cell جدید</li>
+<li>نگهداری Registry و وضعیت Cellها</li>
+<li>مدیریت ظرفیت و محدودیت منابع</li>
+<li>تخصیص Tenant یا Partition به Cell</li>
+<li>انتقال کنترل شده کاربران میان Cellها</li>
+<li>مدیریت نسخه و تنظیمات</li>
+<li>آغاز Backup و بازیابی</li>
+<li>مدیریت سیاست های Deployment</li>
+<li>جمع آوری وضعیت عملیاتی و گزارش های سراسری</li>
+</ul>
+<p>Control Plane باید از Data Plane جدا باشد. اگر Control Plane موقتا در
+دسترس نبود، Cellهای فعال بهتر است با آخرین اطلاعات معتبر Routing بتوانند
+فعالیت عادی خود را ادامه دهند.</p>
+<h3 id="34-data-plane">3.4. Data Plane</h3>
+<p>Data Plane شامل Router و Cellهایی است که درخواست های واقعی کاربران را
+پردازش می کنند. باید تا حد ممکن از عملیات مدیریتی سنگین مستقل باشد.</p>
+<h3 id="35-cell-registry">3.5. Cell Registry</h3>
+<p>Registry اطلاعاتی مانند این موارد را نگهداری می کند:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>cell_id</span></span>
+<span class="line"><span>endpoint</span></span>
+<span class="line"><span>region</span></span>
+<span class="line"><span>status</span></span>
+<span class="line"><span>capacity</span></span>
+<span class="line"><span>software_version</span></span>
+<span class="line"><span>created_at</span></span>
+<span class="line"><span>last_health_check</span></span></code></pre>
+<p>و جدول تخصیص می تواند چنین ساختاری داشته باشد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>tenant_id       cell_id</span></span>
+<span class="line"><span>-----------------------</span></span>
+<span class="line"><span>tenant-1001     cell-1</span></span>
+<span class="line"><span>tenant-1002     cell-2</span></span>
+<span class="line"><span>tenant-1003     cell-1</span></span>
+<span class="line"><span>tenant-1004     cell-3</span></span></code></pre>
+<p>Registry و Mapping دو مفهوم مرتبط اما متفاوت هستند: Registry درباره
+Cellها اطلاعات می دهد؛ Mapping مشخص می کند هر Partition به کدام Cell
+تعلق دارد.</p>
+<hr>
+<h2 id="4-طراحی-یک-cell">4. طراحی یک Cell</h2>
+<h3 id="41-اندازه-cell">4.1. اندازه Cell</h3>
+<p>Cellها نباید بدون محدودیت بزرگ شوند. اگر یک Cell بیش از حد بزرگ باشد،
+خرابی آن همچنان کاربران زیادی را تحت تاثیر قرار می دهد و مدیریت آن دشوار
+می شود.</p>
+<p>در تعیین اندازه باید موارد زیر بررسی شوند:</p>
+<ul>
+<li>تعداد کاربران فعال</li>
+<li>نرخ درخواست در ثانیه (RPS)</li>
+<li>حجم و نرخ رشد داده</li>
+<li>CPU و RAM</li>
+<li>ظرفیت Connectionهای Database</li>
+<li>تعداد و زمان اجرای Jobها</li>
+<li>ظرفیت Queue</li>
+<li>هدف های Availability و Recovery</li>
+<li>هزینه زیرساخت</li>
+</ul>
+<p>اندازه مناسب برای همه سیستم ها یکسان نیست. بهتر است با Load Test، رفتار
+واقعی سیستم و هدف های Reliability تعیین شود.</p>
+<h3 id="42-مرز-cell">4.2. مرز Cell</h3>
+<p>مرز Cell می تواند بر اساس یکی از این موارد تعریف شود:</p>
+<ul>
+<li>Tenant یا مشتری</li>
+<li>گروهی از کاربران</li>
+<li>منطقه جغرافیایی</li>
+<li>نوع Workload</li>
+<li>محدوده داده یا Partition</li>
+<li>ترکیبی از موارد بالا</li>
+</ul>
+<p>برای SaaSهای چندمستاجری، Tenant یک Partition Key متداول است؛ اما اگر یک
+Tenant بسیار بزرگ باشد، ممکن است به Cell اختصاصی یا تقسیم داخلی بیشتری
+نیاز داشته باشد.</p>
+<h3 id="43-استقلال-اجزا">4.3. استقلال اجزا</h3>
+<p>در حالت ایده آل، Cellها نباید State عملیاتی مشترک داشته باشند. اشتراک
+زیرساخت هایی مانند Database، Queue یا Bucket می تواند مرز خرابی را تضعیف
+کند.</p>
+<p>در عمل ممکن است اشتراک برخی سرویس ها به دلایل هزینه یا پیچیدگی اجتناب
+ناپذیر باشد. در این حالت باید اثر آن اشتراک، محدودیت منابع، سیاست های
+دسترسی و Failure Mode آن به صورت شفاف مستند شود.</p>
+<hr>
+<h2 id="5-انتخاب-زبان-برنامه-نویسی">5. انتخاب زبان برنامه نویسی</h2>
+<p>Cell-Based Architecture به زبان خاصی وابسته نیست. می توان همه اجزا را با
+یک زبان ساخت یا برای بخش های مختلف از زبان های متفاوت استفاده کرد.</p>
+<hr>
+<p>زبان کاربرد مناسب ملاحظات</p>
+<hr>
+<p>Node.js / TypeScript API، Router و سرویس های اکوسیستم مناسب و توسعه
+I/O محور سریع</p>
+<p>Go Router، Control Plane و اجرای سبک و مناسب برای
+سرویس های زیرساختی سرویس های همزمان</p>
+<p>Java / Kotlin Backendهای سازمانی و اکوسیستم بالغ و
+پردازش های پایدار ابزارهای گسترده</p>
+<p>Python API، Data Processing و مناسب برای اکوسیستم
+AI داده و یادگیری ماشین</p>
+<p>Rust اجزای حساس به کارایی و پیچیدگی توسعه و استخدام
+ایمنی حافظه بالاتر در برخی تیم ها</p>
+<hr>
+<h3 id="پیشنهاد-عملی">پیشنهاد عملی</h3>
+<p>اگر تیم با Node.js و NestJS تجربه دارد، می تواند Backend، Router و حتی
+Control Plane را با همین Stack پیاده کند. تغییر زبان به Go یا Rust صرفا
+به خاطر Cell-Based بودن ضروری نیست.</p>
+<p>انتخاب زبان باید بر اساس مهارت تیم، نیاز Performance، اکوسیستم، هزینه
+نگهداری و پیچیدگی عملیاتی انجام شود.</p>
+<hr>
+<h2 id="6-انتخاب-database-و-استراتژی-داده">6. انتخاب Database و استراتژی داده</h2>
+<h3 id="61-postgresql">6.1. PostgreSQL</h3>
+<p>PostgreSQL گزینه مناسبی برای داده های رابطه ای، تراکنش ها و بسیاری از
+Workloadهای SaaS است.</p>
+<p>در یک طراحی Cell-Based می توان برای هر Cell یک Database مستقل داشت:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Cell 1 -&gt; PostgreSQL Instance / Database 1</span></span>
+<span class="line"><span>Cell 2 -&gt; PostgreSQL Instance / Database 2</span></span>
+<span class="line"><span>Cell 3 -&gt; PostgreSQL Instance / Database 3</span></span></code></pre>
+<p>سطح جداسازی باید آگاهانه انتخاب شود:</p>
+<ol>
+<li><strong>Schema جدا:</strong> جداسازی منطقی محدود؛ منابع Database مشترک هستند.</li>
+<li><strong>Database جدا در یک Instance:</strong> جداسازی منطقی بیشتر، اما CPU، RAM و
+Failure Domain مشترک است.</li>
+<li><strong>Instance جدا:</strong> استقلال عملیاتی بهتر، اما ممکن است ماشین یا
+Storage زیرین مشترک باشد.</li>
+<li><strong>زیرساخت مستقل:</strong> جداسازی قوی تر، با هزینه و پیچیدگی بیشتر.</li>
+</ol>
+<p>Databaseهای جدا روی یک سرور فیزیکی در برابر خرابی همان سرور مستقل
+نیستند.</p>
+<h3 id="62-mongodb">6.2. MongoDB</h3>
+<p>MongoDB برای مدل های Document-oriented مناسب است. استفاده از آن باید بر
+اساس نیاز مدل داده و Queryها باشد، نه صرفا به دلیل استفاده از معماری
+Cell-Based.</p>
+<h3 id="63-redis">6.3. Redis</h3>
+<p>کاربردهای متداول:</p>
+<ul>
+<li>Cache</li>
+<li>Rate Limiting</li>
+<li>Sessionهای موقت</li>
+<li>داده های موقت و کوتاه عمر</li>
+<li>برخی الگوهای هماهنگی، با رعایت محدودیت های آن</li>
+</ul>
+<p>برای Isolation بهتر، Redis هر Cell می تواند مستقل یا دست کم با مرزبندی و
+محدودیت منابع دقیق باشد.</p>
+<h3 id="64-search-و-analytics">6.4. Search و Analytics</h3>
+<p>ابزارهای مکمل:</p>
+<p>فناوری کاربرد</p>
+<hr>
+<p>OpenSearch / Elasticsearch جستجو و Indexهای خواندنی
+ClickHouse تحلیل داده و Queryهای تحلیلی
+Data Lake نگهداری داده های تحلیلی و تاریخی
+Object Storage فایل ها، رسانه ها و خروجی های Backup</p>
+<p>Search Index مرکزی می تواند داده های منتخب چند Cell را برای جستجوی
+سراسری تجمیع کند. در این مدل، Index معمولا Read Model است و منبع اصلی
+داده در Cell مالک باقی می ماند.</p>
+<h3 id="65-الگوی-مالکیت-داده">6.5. الگوی مالکیت داده</h3>
+<p>برای هر موجودیت باید مشخص باشد کدام Cell مالک داده است.</p>
+<p>اصول مهم:</p>
+<ul>
+<li>یک منبع معتبر برای نوشتن هر داده تعیین شود.</li>
+<li>از نوشتن همزمان و بدون هماهنگی در چند Cell اجتناب شود.</li>
+<li>داده های تجمیعی با Event یا CDC ساخته شوند.</li>
+<li>داده های Read Model قابلیت بازسازی داشته باشند.</li>
+<li>سازگاری نهایی (Eventual Consistency) در بخش هایی که لازم است پذیرفته
+و مستند شود.</li>
+</ul>
+<hr>
+<h2 id="7-ابزارها-و-فناوری-های-پیشنهادی">7. ابزارها و فناوری های پیشنهادی</h2>
+<p>هیچ ابزار اجباری یا محصول واحدی برای پیاده سازی Cell-Based Architecture
+وجود ندارد. انتخاب ها به اندازه سیستم، Cloud Provider، مهارت تیم و
+نیازهای Availability بستگی دارند.</p>
+<h3 id="71-containerization">7.1. Containerization</h3>
+<p><strong>Docker</strong></p>
+<p>برای بسته بندی برنامه، Worker و وابستگی های اجرایی در Container استفاده
+می شود.</p>
+<p>مزایا: - محیط اجرای قابل تکرار - جداسازی فرآیندها - ساده تر شدن
+Deployment - سازگاری بهتر محیط توسعه و Production</p>
+<h3 id="72-orchestration">7.2. Orchestration</h3>
+<p>ابزار کاربرد</p>
+<hr>
+<p>Kubernetes Orchestration در مقیاس بزرگ
+K3s توزیع سبک Kubernetes
+Amazon ECS اجرای Container در AWS
+Docker Compose توسعه محلی و محیط های ساده
+Nomad زمان بندی و اجرای Workload</p>
+<p>Kubernetes به تنهایی معماری Cell-Based ایجاد نمی کند. باید مرز Cellها،
+Namespaceها، Clusterها، Databaseها، Routing و سیاست های جداسازی نیز
+طراحی شوند.</p>
+<p>می توان چند Cell را در یک Kubernetes Cluster اجرا کرد، اما در این حالت
+خرابی خود Cluster همچنان ممکن است چند Cell را همزمان تحت تاثیر قرار دهد.
+برای Isolation قوی تر می توان از Clusterها یا Failure Domainهای مستقل
+استفاده کرد.</p>
+<h3 id="73-reverse-proxy-و-routing">7.3. Reverse Proxy و Routing</h3>
+<p>ابزار کاربرد</p>
+<hr>
+<p>NGINX Reverse Proxy و Load Balancing
+Envoy Proxy و Traffic Management
+HAProxy Load Balancing
+Traefik Routing و Discovery در محیط های Container</p>
+<p>این ابزارها می توانند بخشی از Routing را انجام دهند، اما منطق تخصیص
+Partition به Cell معمولا به Registry یا Cell Router نیاز دارد.</p>
+<h3 id="74-message-broker">7.4. Message Broker</h3>
+<p>ابزار کاربرد و ملاحظات</p>
+<hr>
+<p>RabbitMQ صف پیام و Work Queue
+Apache Kafka Event Streaming با حجم بالا و نگهداری جریان رویداد
+NATS Messaging سبک و ارتباطات سریع
+Redis Streams سناریوهای ساده تر مبتنی بر Redis</p>
+<p>انتخاب Broker باید با الگوی مصرف پیام، نیاز به Replay، ترتیب پیام، دوام
+داده و مدل عملیاتی هماهنگ باشد.</p>
+<p>برای حفظ Isolation، Queueهای Cellها را جدا یا با Quota و سیاست های سخت
+گیرانه محدود کنید. یک Broker مشترک بدون محدودیت می تواند تبدیل به نقطه
+فشار مشترک شود.</p>
+<h3 id="75-observability">7.5. Observability</h3>
+<p>ابزار مسئولیت</p>
+<hr>
+<p>Prometheus جمع آوری Metrics
+Grafana داشبورد و Visualization
+Loki تجمیع Log
+OpenTelemetry استاندارد Instrumentation و Telemetry
+Jaeger / Tempo Distributed Tracing
+Alertmanager مدیریت Alertها</p>
+<p>شاخص های مهم برای هر Cell:</p>
+<ul>
+<li>Request Rate</li>
+<li>Error Rate</li>
+<li>Latency در صدک های مختلف</li>
+<li>CPU و RAM</li>
+<li>Database Connections</li>
+<li>Database Replication Lag</li>
+<li>Queue Depth</li>
+<li>Worker Lag</li>
+<li>Disk Usage</li>
+<li>وضعیت Health Check</li>
+<li>تعداد کاربران و Tenantهای تخصیص یافته</li>
+</ul>
+<h3 id="76-infrastructure-as-code-و-deployment">7.6. Infrastructure as Code و Deployment</h3>
+<p>ابزار کاربرد</p>
+<hr>
+<p>Terraform ساخت و مدیریت زیرساخت
+OpenTofu ابزار متن باز Infrastructure as Code
+Helm بسته بندی و نصب برنامه در Kubernetes
+Argo CD GitOps و همگام سازی وضعیت Cluster با Git
+Ansible پیکربندی و Automation سرورها
+GitHub Actions CI/CD و اجرای Pipeline
+AWS CloudFormation تعریف زیرساخت در AWS
+AWS Step Functions Orchestration فرایندهای مدیریتی در AWS</p>
+<p>یک هدف مهم این است که ساخت Cell جدید به فرایندی خودکار، تکرارپذیر و قابل
+ممیزی تبدیل شود.</p>
+<hr>
+<h2 id="8-routing-و-تخصیص-کاربران-به-cellها">8. Routing و تخصیص کاربران به Cellها</h2>
+<p>یکی از تصمیمات اصلی، انتخاب Partition Key و الگوریتم تخصیص است.</p>
+<h3 id="81-hash-based-routing">8.1. Hash-Based Routing</h3>
+<p>در ساده ترین روش:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="javascript"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> cellIndex</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> hash</span><span style="color:#E1E4E8">(partitionKey) </span><span style="color:#F97583">%</span><span style="color:#E1E4E8"> totalCells;</span></span></code></pre>
+<p>مزیت: - ساده و سریع - بدون نیاز به Mapping برای هر کاربر</p>
+<p>عیب: - با تغییر تعداد Cellها، تعداد زیادی از تخصیص ها ممکن است تغییر
+کند. - انتقال کنترل شده و انتخاب دستی Cell دشوارتر است.</p>
+<h3 id="82-consistent-hashing">8.2. Consistent Hashing</h3>
+<p>در Consistent Hashing، اضافه یا حذف Node معمولا باعث جابه جایی محدودتری
+نسبت به Hash ساده می شود.</p>
+<p>این روش برای برخی سیستم های توزیع شده مفید است، اما به تنهایی جایگزین
+Registry، مدیریت ظرفیت و فرایند Migration نیست.</p>
+<h3 id="83-mapping-table">8.3. Mapping Table</h3>
+<p>در این روش تخصیص به صورت صریح نگهداری می شود:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>partition_key     cell_id</span></span>
+<span class="line"><span>-------------------------</span></span>
+<span class="line"><span>tenant-1001       cell-1</span></span>
+<span class="line"><span>tenant-1002       cell-2</span></span>
+<span class="line"><span>tenant-1003       cell-1</span></span>
+<span class="line"><span>tenant-1004       cell-3</span></span></code></pre>
+<p>مزایا: - کنترل دقیق روی تخصیص - امکان انتقال Tenant - پشتیبانی از Cell
+اختصاصی برای مشتری بزرگ - تغییر تعداد Cellها بدون تغییر الگوریتم Hash -
+امکان مدیریت ظرفیت و سیاست های تخصیص</p>
+<p>معایب: - نیاز به Registry قابل اتکا - Cache و Invalidation اطلاعات
+Mapping - نیاز به فرایند امن برای انتقال Partition</p>
+<p>برای بسیاری از SaaSهای چندمستاجری، Mapping Table گزینه عملی و قابل کنترل
+تری است.</p>
+<h3 id="84-نکات-امنیتی-routing">8.4. نکات امنیتی Routing</h3>
+<p>Router نباید صرفا به <code>tenant_id</code> ارسالی از Client اعتماد کند. ابتدا باید
+هویت کاربر و مجوز دسترسی احراز شود و سپس Partition Key معتبر از Context
+مورد اعتماد استخراج شود.</p>
+<p>همچنین: - مقصد داخلی Cell نباید از ورودی دلخواه Client پذیرفته شود. -
+ارتباط Router تا Cell باید احراز هویت و رمزنگاری شود. - تغییر Mapping
+باید Audit Log داشته باشد. - Cache قدیمی نباید موجب ارسال درخواست به
+Cell اشتباه شود. - در انتقال Cell باید رفتار درخواست های در حال اجرا
+مشخص باشد.</p>
+<hr>
+<h2 id="9-ارتباط-بین-cellها-و-داده-های-سراسری">9. ارتباط بین Cellها و داده های سراسری</h2>
+<p>فرض کنیم کاربر A در Cell 1 و کاربر B در Cell 2 قرار دارد. کاربر A
+محتوایی منتشر می کند و کاربر B باید بتواند آن را در جستجو یا Feed مشاهده
+کند.</p>
+<p>چند الگوی رایج وجود دارد:</p>
+<h3 id="91-event-replication">9.1. Event Replication</h3>
+<p>Cell مالک پس از ثبت تغییر، Event منتشر می کند:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Cell 1</span></span>
+<span class="line"><span>  |</span></span>
+<span class="line"><span>  | ContentPublished</span></span>
+<span class="line"><span>  v</span></span>
+<span class="line"><span>Event Broker</span></span>
+<span class="line"><span>  |</span></span>
+<span class="line"><span>  +----&gt; Search Indexer</span></span>
+<span class="line"><span>  |</span></span>
+<span class="line"><span>  +----&gt; Feed Read Model</span></span>
+<span class="line"><span>  |</span></span>
+<span class="line"><span>  +----&gt; Analytics Pipeline</span></span></code></pre>
+<p>این روش برای ساخت Read Modelهای تجمیعی مفید است.</p>
+<h3 id="92-api-communication">9.2. API Communication</h3>
+<p>یک Cell در صورت نیاز می تواند از API کنترل شده Cell دیگر استفاده کند.
+این ارتباط باید محدود، احراز هویت شده، دارای Timeout و سیاست Retry باشد.</p>
+<p>ارتباط همزمان و زنجیره ای بین Cellها را به حداقل برسانید؛ چون دسترس
+پذیری چند Cell را به هم وابسته می کند.</p>
+<h3 id="93-central-read-model">9.3. Central Read Model</h3>
+<p>برای جستجو، Feed عمومی، گزارش گیری و Discovery می توان یک Read Model
+مرکزی ساخت.</p>
+<p>ویژگی های مهم: - فقط داده های مورد نیاز در آن کپی شود. - منبع اصلی داده
+در Cell مالک باقی بماند. - Read Model قابل بازسازی باشد. - تاخیر همگام
+سازی اندازه گیری شود. - اطلاعات حساس بدون نیاز وارد لایه مرکزی نشود.</p>
+<h3 id="94-transactional-outbox">9.4. Transactional Outbox</h3>
+<p>برای جلوگیری از حالتی که Database تغییر کند اما Event منتشر نشود، می
+توان از الگوی Transactional Outbox استفاده کرد.</p>
+<p>در یک تراکنش Database: 1. داده اصلی ثبت می شود. 2. رکورد Event در جدول
+Outbox ذخیره می شود. 3. یک Worker رکورد Outbox را منتشر می کند. 4. Event
+پس از تایید انتشار علامت گذاری می شود.</p>
+<p>مصرف کننده ها نیز باید Idempotent باشند؛ یعنی دریافت دوباره یک Event
+باعث اجرای تکراری و مخرب عملیات نشود.</p>
+<hr>
+<h2 id="10-مدیریت-خرابی-و-بازیابی">10. مدیریت خرابی و بازیابی</h2>
+<p>فرض کنیم Cell 2 دچار مشکل شده است.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Cell 1: HEALTHY</span></span>
+<span class="line"><span>Cell 2: FAILED</span></span>
+<span class="line"><span>Cell 3: HEALTHY</span></span></code></pre>
+<p>فرایند پیشنهادی:</p>
+<ol>
+<li>Monitoring خرابی یا افزایش غیرعادی Error Rate را تشخیص می دهد.</li>
+<li>Cell 2 از دریافت ترافیک جدید خارج می شود.</li>
+<li>درخواست های در حال اجرا طبق سیاست Timeout و Drain مدیریت می شوند.</li>
+<li>سایر Cellها بدون وابستگی به Cell 2 به کار ادامه می دهند.</li>
+<li>تیم یا Automation علت خرابی را بررسی می کند.</li>
+<li>Cell از طریق Restart، Restore یا Reprovision بازیابی می شود.</li>
+<li>پس از Health Check و Readiness، ترافیک به آن باز می گردد.</li>
+</ol>
+<h3 id="نکته-مهم-درباره-انتقال-کاربران">نکته مهم درباره انتقال کاربران</h3>
+<p>خارج کردن یک Cell از Routing به معنی انتقال خودکار داده های آن نیست.
+برای انتقال کاربران باید: - منبع داده مشخص باشد. - Backup و Replication
+معتبر وجود داشته باشد. - Writeها در زمان انتقال کنترل شوند. - وضعیت
+درخواست های در حال اجرا تعیین شود. - Mapping تنها در زمان مناسب تغییر
+کند. - امکان Rollback وجود داشته باشد.</p>
+<h3 id="اهداف-بازیابی">اهداف بازیابی</h3>
+<p>برای هر Cell باید دو هدف تعریف شود:</p>
+<ul>
+<li><strong>RTO:</strong> حداکثر زمان قابل قبول برای بازیابی سرویس.</li>
+<li><strong>RPO:</strong> حداکثر میزان قابل قبول از دست رفتن داده بر حسب زمان.</li>
+</ul>
+<p>این اهداف روی Backup، Replication، معماری Database و هزینه زیرساخت اثر
+مستقیم دارند.</p>
+<h3 id="خرابی-های-مشترک">خرابی های مشترک</h3>
+<p>حتی با Cellهای مستقل، موارد زیر می توانند چند Cell را همزمان تحت تاثیر
+قرار دهند:</p>
+<ul>
+<li>خرابی Region یا شبکه مشترک</li>
+<li>Router مرکزی معیوب</li>
+<li>DNS یا Identity Provider مشترک</li>
+<li>Secret یا Configuration اشتباه و سراسری</li>
+<li>Deployment همزمان و معیوب</li>
+<li>Database یا Broker مشترک</li>
+<li>محدودیت منابع در Host یا Cluster مشترک</li>
+</ul>
+<p>بنابراین Cell-Based Architecture باید همراه با طراحی Failure Domain،
+Redundancy و کنترل وابستگی های مشترک باشد.</p>
+<hr>
+<h2 id="11-deployment-و-مدیریت-چرخه-عمر-cellها">11. Deployment و مدیریت چرخه عمر Cellها</h2>
+<h3 id="111-cell-template">11.1. Cell Template</h3>
+<p>برای تمام Cellها یک Template استاندارد تعریف کنید. این Template شامل
+موارد زیر است:</p>
+<ul>
+<li>نسخه Application</li>
+<li>تنظیمات Runtime</li>
+<li>منابع CPU و RAM</li>
+<li>Database و Migration</li>
+<li>Cache و Queue</li>
+<li>Network Policy</li>
+<li>Secrets</li>
+<li>Monitoring</li>
+<li>Health Check</li>
+<li>Backup Policy</li>
+</ul>
+<h3 id="112-canary-deployment">11.2. Canary Deployment</h3>
+<p>نسخه جدید ابتدا روی یک Cell آزمایشی یا گروه کوچکی از Cellها منتشر می
+شود. سپس Metrics و Errorها بررسی می شوند. اگر نتیجه مطلوب بود، انتشار
+مرحله ای ادامه پیدا می کند.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Build</span></span>
+<span class="line"><span>  |</span></span>
+<span class="line"><span>  v</span></span>
+<span class="line"><span>Deploy to Canary Cell</span></span>
+<span class="line"><span>  |</span></span>
+<span class="line"><span>  v</span></span>
+<span class="line"><span>Health + Metrics Check</span></span>
+<span class="line"><span>  |</span></span>
+<span class="line"><span>  +---- Failure ----&gt; Rollback / Stop</span></span>
+<span class="line"><span>  |</span></span>
+<span class="line"><span>  v</span></span>
+<span class="line"><span>Deploy to Small Cell Group</span></span>
+<span class="line"><span>  |</span></span>
+<span class="line"><span>  v</span></span>
+<span class="line"><span>Observe</span></span>
+<span class="line"><span>  |</span></span>
+<span class="line"><span>  v</span></span>
+<span class="line"><span>Progressive Rollout</span></span></code></pre>
+<p>از انتشار همزمان نسخه جدید به تمام Cellها اجتناب کنید؛ این کار یکی از
+مزیت های اصلی معماری را از بین می برد.</p>
+<h3 id="113-cell-provisioning">11.3. Cell Provisioning</h3>
+<p>فرایند ایجاد Cell جدید می تواند چنین باشد:</p>
+<ol>
+<li>Control Plane درخواست ایجاد Cell را دریافت می کند.</li>
+<li>ظرفیت و محدودیت ها بررسی می شوند.</li>
+<li>زیرساخت از روی Template ساخته می شود.</li>
+<li>Database و Schema آماده می شوند.</li>
+<li>سرویس ها Deploy می شوند.</li>
+<li>Health Check اجرا می شود.</li>
+<li>Cell در Registry ثبت می شود.</li>
+<li>پس از تایید، Partitionهای جدید به آن تخصیص می یابند.</li>
+</ol>
+<h3 id="114-cell-rebalancing">11.4. Cell Rebalancing</h3>
+<p>وقتی یک Cell به آستانه ظرفیت نزدیک می شود، می توان بخشی از Partitionها
+را به Cell دیگر منتقل کرد.</p>
+<p>این فرایند باید با کنترل Writeها، انتقال داده، اعتبارسنجی، تغییر Mapping
+و امکان Rollback انجام شود. تغییر ساده یک سطر Mapping بدون انتقال یا
+همگام سازی داده کافی نیست.</p>
+<hr>
+<h2 id="12-امنیت-و-جداسازی">12. امنیت و جداسازی</h2>
+<p>Cell-Based بودن به تنهایی امنیت Tenantها را تضمین نمی کند. کنترل های
+امنیتی باید در تمام لایه ها اعمال شوند.</p>
+<p>چک لیست مهم:</p>
+<ul>
+<li>احراز هویت و Authorization در API</li>
+<li>استخراج Tenant از هویت معتبر، نه ورودی قابل جعل</li>
+<li>Network Segmentation بین Cellها</li>
+<li>Secret مستقل یا Scope شده برای هر Cell</li>
+<li>رمزنگاری ارتباطات داخلی</li>
+<li>رمزنگاری داده در حالت ذخیره</li>
+<li>Least Privilege برای Database و سرویس ها</li>
+<li>Audit Log برای عملیات مدیریتی</li>
+<li>Rate Limit و Quota به تفکیک Tenant و Cell</li>
+<li>Backup رمزنگاری شده</li>
+<li>مدیریت امن کلیدها و Rotation</li>
+<li>جلوگیری از دسترسی مستقیم Client به سرویس های داخلی</li>
+</ul>
+<p>برای محیط های حساس، جداسازی می تواند تا سطح Account، Subscription،
+Project یا Cluster مستقل گسترش پیدا کند.</p>
+<hr>
+<h2 id="13-مزایا-معایب-و-anti-patternها">13. مزایا، معایب و Anti-Patternها</h2>
+<h3 id="مزایا">مزایا</h3>
+<ul>
+<li>محدود شدن محدوده اثر خرابی</li>
+<li>کاهش اثر Deployment معیوب</li>
+<li>مقیاس پذیری افقی با افزودن Cell</li>
+<li>امکان تخصیص منابع متناسب با هر گروه</li>
+<li>جداسازی عملیاتی Tenantها</li>
+<li>امکان Cell اختصاصی برای مشتریان بزرگ</li>
+<li>بازیابی و مانیتورینگ مستقل</li>
+<li>کنترل بهتر روی ظرفیت و هزینه در مقیاس بالا</li>
+</ul>
+<h3 id="معایب">معایب</h3>
+<ul>
+<li>پیچیدگی بیشتر در طراحی و عملیات</li>
+<li>افزایش هزینه Database و زیرساخت</li>
+<li>دشواری Migration و انتقال داده</li>
+<li>پیچیدگی گزارش گیری سراسری</li>
+<li>نیاز به Control Plane و Registry</li>
+<li>نیاز به Observability دقیق</li>
+<li>پیچیدگی مدیریت نسخه و Configuration</li>
+<li>دشواری سازگاری داده میان Cellها</li>
+</ul>
+<h3 id="anti-patternهای-رایج">Anti-Patternهای رایج</h3>
+<ol>
+<li><strong>Cellهای بدون محدودیت اندازه:</strong> Cell بزرگ، Blast Radius بزرگی دارد.</li>
+<li><strong>Shared Database بدون کنترل:</strong> خرابی Database مشترک می تواند تمام
+Cellها را مختل کند.</li>
+<li><strong>Shared Queue بدون Quota:</strong> یک Cell پرمصرف می تواند منابع همه را
+اشغال کند.</li>
+<li><strong>Router پیچیده:</strong> Business Logic در Router آن را به نقطه شکست حساس
+تبدیل می کند.</li>
+<li><strong>Cross-Cell Calls زیاد:</strong> وابستگی همزمان، Isolation را تضعیف می
+کند.</li>
+<li><strong>Deployment همزمان:</strong> انتشار معیوب می تواند تمام Cellها را درگیر
+کند.</li>
+<li><strong>نبود Rebalancing Plan:</strong> اضافه کردن Cell بدون راه انتقال داده و
+Partition کافی نیست.</li>
+<li><strong>نادیده گرفتن Failure Domain:</strong> چند Cell روی یک Host یا Cluster
+ممکن است با یک خرابی از دست بروند.</li>
+<li><strong>اعتماد به Hash ساده برای همه شرایط:</strong> تغییر تعداد Cellها می تواند
+تخصیص ها را جابه جا کند.</li>
+<li><strong>فرض استقلال کامل بدون آزمون:</strong> باید با Failure Injection و تست
+عملی اثبات شود.</li>
+</ol>
+<hr>
+<h2 id="14-مقایسه-با-معماری-های-دیگر">14. مقایسه با معماری های دیگر</h2>
+<h3 id="cell-based-در-برابر-microservices">Cell-Based در برابر Microservices</h3>
+<hr>
+<p>موضوع Microservices Cell-Based</p>
+<hr>
+<p>محور تقسیم قابلیت و مسئولیت نرم گروه درخواست ها،
+افزاری کاربران یا داده ها</p>
+<p>هدف اصلی استقلال توسعه و استقرار محدود کردن Blast Radius
+سرویس ها</p>
+<p>واحد اصلی Service Cell</p>
+<p>Database معمولا مالکیت داده در داده های عملیاتی مستقل
+سطح سرویس در سطح Cell</p>
+<p>ارتباطات API و Messaging میان ارتباط میان Cellها باید
+سرویس ها حداقلی باشد</p>
+<p>ترکیب پذیری می تواند داخل هر Cell می تواند شامل چند
+استفاده شود Microservice باشد</p>
+<hr>
+<p>Cell-Based جایگزین Microservices نیست. یک Cell می تواند از چند
+Microservice تشکیل شده باشد.</p>
+<h3 id="cell-based-در-برابر-modular-monolith">Cell-Based در برابر Modular Monolith</h3>
+<p>Modular Monolith روی مرزبندی ماژول های داخل یک برنامه و یک Deployment
+تمرکز دارد. Cell-Based روی تکرار واحدهای عملیاتی مستقل و تقسیم Workload
+تمرکز می کند.</p>
+<p>برای بسیاری از محصولات، Modular Monolith نقطه شروع ساده تر و کم هزینه
+تری است.</p>
+<h3 id="cell-based-در-برابر-sharding">Cell-Based در برابر Sharding</h3>
+<p>Sharding داده یا بار را بین چند Partition تقسیم می کند. Cell-Based
+معمولا یک سطح بالاتر است: علاوه بر داده، اجزای اجرای برنامه و منابع لازم
+برای پردازش Workload را نیز در واحدهای مستقل قرار می دهد.</p>
+<p>Sharding می تواند یکی از تکنیک های داخلی Cell-Based Architecture باشد.</p>
+<h3 id="cell-based-در-برابر-multi-region">Cell-Based در برابر Multi-Region</h3>
+<p>Multi-Region درباره توزیع سیستم در چند منطقه جغرافیایی است. Cell-Based
+درباره ساخت مرزهای مستقل Workload است. می توان چند Cell در یک Region یا
+Cellهایی در چند Region داشت.</p>
+<hr>
+<h2 id="15-نمونه-طراحی-برای-یک-وب-سایت">15. نمونه طراحی برای یک وب سایت</h2>
+<p>این بخش یک مثال آموزشی برای یک وب سایت فرضی با دامنه <code>faridkarami.ir</code>
+است. هدف، نشان دادن الگوی طراحی است و به معنی ادعای وجود چنین زیرساختی
+برای این دامنه نیست.</p>
+<p>فرض کنیم وب سایت در آینده شامل حساب کاربران، محتوای منتشرشده، جستجو،
+اعلان ها و پردازش رسانه باشد.</p>
+<h3 id="151-تقسیم-مسئولیت">15.1. تقسیم مسئولیت</h3>
+<ul>
+<li>کاربران و داده های حساب می توانند بر اساس User ID یا Account ID
+تقسیم شوند.</li>
+<li>محتوای متعلق به یک حساب می تواند در Cell مالک همان حساب ذخیره شود.</li>
+<li>جستجوی عمومی می تواند از Search Index تجمیع شده استفاده کند.</li>
+<li>پردازش تصویر و ویدئو می تواند از Workerهای مستقل و Queueهای کنترل
+شده استفاده کند.</li>
+<li>Analytics می تواند از Eventهای Cellها تغذیه شود.</li>
+</ul>
+<h3 id="152-نمای-سطح-بالا">15.2. نمای سطح بالا</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>                         INTERNET</span></span>
+<span class="line"><span>                            |</span></span>
+<span class="line"><span>                    DNS / EDGE / WAF</span></span>
+<span class="line"><span>                            |</span></span>
+<span class="line"><span>                      API GATEWAY</span></span>
+<span class="line"><span>                            |</span></span>
+<span class="line"><span>                       CELL ROUTER</span></span>
+<span class="line"><span>                            |</span></span>
+<span class="line"><span>                     CELL REGISTRY</span></span>
+<span class="line"><span>                            |</span></span>
+<span class="line"><span>          +-----------------+-----------------+</span></span>
+<span class="line"><span>          |                 |                 |</span></span>
+<span class="line"><span>        CELL 1            CELL 2            CELL 3</span></span>
+<span class="line"><span>          |                 |                 |</span></span>
+<span class="line"><span>      API / Worker      API / Worker      API / Worker</span></span>
+<span class="line"><span>          |                 |                 |</span></span>
+<span class="line"><span>      PostgreSQL        PostgreSQL        PostgreSQL</span></span>
+<span class="line"><span>          |                 |                 |</span></span>
+<span class="line"><span>        Redis             Redis             Redis</span></span>
+<span class="line"><span>          |                 |                 |</span></span>
+<span class="line"><span>       Queue             Queue             Queue</span></span>
+<span class="line"><span>          |                 |                 |</span></span>
+<span class="line"><span>          +-----------------+-----------------+</span></span>
+<span class="line"><span>                            |</span></span>
+<span class="line"><span>                       EVENT STREAM</span></span>
+<span class="line"><span>                            |</span></span>
+<span class="line"><span>                 +----------+----------+</span></span>
+<span class="line"><span>                 |          |          |</span></span>
+<span class="line"><span>              SEARCH     ANALYTICS   NOTIFICATIONS</span></span>
+<span class="line"><span>              INDEX       PIPELINE      SYSTEM</span></span></code></pre>
+<h3 id="153-جریان-یک-درخواست">15.3. جریان یک درخواست</h3>
+<p>فرض کنیم کاربری وارد <code>faridkarami.ir</code> می شود و درخواست مشاهده پروفایل را
+ارسال می کند.</p>
+<ol>
+<li>درخواست از Edge و Gateway عبور می کند.</li>
+<li>هویت کاربر اعتبارسنجی می شود.</li>
+<li>Router کلید Partition معتبر را استخراج می کند.</li>
+<li>Mapping مشخص می کند کاربر در Cell 2 قرار دارد.</li>
+<li>درخواست به API همان Cell هدایت می شود.</li>
+<li>API داده را از Database و Cache همان Cell می خواند.</li>
+<li>پاسخ به Client برمی گردد.</li>
+</ol>
+<h3 id="154-جستجوی-سراسری">15.4. جستجوی سراسری</h3>
+<p>برای جستجوی محتوا در تمام Cellها، درخواست ها نباید لزوما به تک تک Cellها
+ارسال شوند. بهتر است Eventهای تغییر محتوا به یک Search Index مرکزی منتقل
+شوند.</p>
+<p>در این مدل: - Database هر Cell منبع اصلی داده است. - Search Index نسخه
+قابل جستجوی داده هاست. - Indexer با Eventها به روز می شود. - در صورت
+نیاز Index از داده های اصلی بازسازی می شود.</p>
+<h3 id="155-نکته-درباره-فایل-ها-و-رسانه-ها">15.5. نکته درباره فایل ها و رسانه ها</h3>
+<p>Object Storage می تواند Shared باشد، اما Shared بودن آن باید با طراحی
+مناسب Bucket، Prefix، IAM، Quota، Availability و Failure Domain همراه
+باشد. اگر Object Storage مشترک از دسترس خارج شود، چند Cell ممکن است تحت
+تاثیر قرار گیرند.</p>
+<p>در صورت نیاز به Isolation قوی تر، می توان Storage Namespace یا حتی
+زیرساخت ذخیره سازی مستقل برای هر Cell در نظر گرفت.</p>
+<hr>
+<h2 id="16-مسیر-مهاجرت-مرحله-ای">16. مسیر مهاجرت مرحله ای</h2>
+<p>مهاجرت مستقیم از یک معماری ساده به Cell-Based کامل معمولا پرهزینه و
+پرریسک است. مسیر تدریجی پیشنهاد می شود.</p>
+<h3 id="مرحله-1-آماده-سازی-domainها">مرحله 1: آماده سازی Domainها</h3>
+<ul>
+<li>مرز ماژول ها را مشخص کنید.</li>
+<li>مالکیت هر جدول و موجودیت را تعیین کنید.</li>
+<li>وابستگی های مستقیم میان ماژول ها را کاهش دهید.</li>
+<li>APIهای داخلی مشخص تعریف کنید.</li>
+</ul>
+<h3 id="مرحله-2-آماده-سازی-multi-tenancy">مرحله 2: آماده سازی Multi-Tenancy</h3>
+<ul>
+<li>Tenant ID یا Partition Key را در مدل داده ها تعریف کنید.</li>
+<li>دسترسی به داده ها را در سطح Tenant کنترل کنید.</li>
+<li>Queryها و Indexها را برای Partition Key بررسی کنید.</li>
+<li>تست های جلوگیری از نشت داده میان Tenantها بسازید.</li>
+</ul>
+<h3 id="مرحله-3-جداسازی-پردازش-های-پس-زمینه">مرحله 3: جداسازی پردازش های پس زمینه</h3>
+<ul>
+<li>Workerها را از API جدا کنید.</li>
+<li>Jobها را Idempotent طراحی کنید.</li>
+<li>Retry و Dead Letter Queue تعریف کنید.</li>
+<li>برای Tenantهای پرمصرف Quota در نظر بگیرید.</li>
+</ul>
+<h3 id="مرحله-4-event-driven-کردن-بخش-های-مناسب">مرحله 4: Event-Driven کردن بخش های مناسب</h3>
+<ul>
+<li>Eventهای دامنه ای مشخص تعریف کنید.</li>
+<li>از Transactional Outbox در موارد لازم استفاده کنید.</li>
+<li>مصرف کننده های Idempotent بسازید.</li>
+<li>Read Modelهای تجمیعی را جدا کنید.</li>
+</ul>
+<h3 id="مرحله-5-ساخت-control-plane-و-registry">مرحله 5: ساخت Control Plane و Registry</h3>
+<ul>
+<li>مدل Cell و وضعیت آن را تعریف کنید.</li>
+<li>Mapping میان Partition و Cell بسازید.</li>
+<li>ظرفیت و Health هر Cell را ثبت کنید.</li>
+<li>عملیات Provisioning و Deprovisioning را خودکار کنید.</li>
+</ul>
+<h3 id="مرحله-6-ساخت-cell-دوم">مرحله 6: ساخت Cell دوم</h3>
+<p>ابتدا یک گروه محدود و قابل کنترل از کاربران یا Tenantها را به Cell دوم
+منتقل کنید. مسیر انتقال، Backup، Restore، Routing و Rollback را در محیط
+آزمایشی تمرین کنید.</p>
+<h3 id="مرحله-7-canary-و-rebalancing">مرحله 7: Canary و Rebalancing</h3>
+<ul>
+<li>Deployment مرحله ای بسازید.</li>
+<li>انتقال Partition را خودکار و قابل ممیزی کنید.</li>
+<li>سناریوهای خرابی را آزمایش کنید.</li>
+<li>ظرفیت و اندازه Cellها را با داده واقعی تنظیم کنید.</li>
+</ul>
+<h3 id="چه-زمانی-مهاجرت-توجیه-دارد">چه زمانی مهاجرت توجیه دارد؟</h3>
+<p>وقتی یکی یا چند مورد زیر به شکل واقعی مشاهده شود: - یک گروه از کاربران
+منابع سایر کاربران را مصرف می کند. - نیاز به محدود کردن اثر خرابی یا
+Deployment وجود دارد. - Database یا Workload مشترک به گلوگاه تبدیل شده
+است. - مشتریان بزرگ نیاز به Isolation اختصاصی دارند. - تیم توان عملیاتی
+مدیریت چند محیط مستقل را دارد.</p>
+<p>صرف پیش بینی رشد آینده، به تنهایی دلیل کافی برای ساخت تعداد زیادی Cell
+نیست.</p>
+<hr>
+<h2 id="17-چک-لیست-طراحی-و-اجرا">17. چک لیست طراحی و اجرا</h2>
+<h3 id="طراحی-معماری">طراحی معماری</h3>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Partition Key مشخص است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> مرز و مسئولیت هر Cell مشخص است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> اندازه و سقف منابع Cell تعریف شده است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Control Plane از Data Plane جدا شده است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Router ساده و قابل توسعه است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> وابستگی های مشترک مستند شده اند.</li>
+</ul>
+<h3 id="داده-و-سازگاری">داده و سازگاری</h3>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> مالکیت داده هر موجودیت مشخص است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> استراتژی Database Isolation تعریف شده است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Backup و Restore هر Cell آزمایش شده است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Eventها دارای نسخه و قرارداد مشخص هستند.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Outbox و Idempotency در موارد لازم پیاده شده اند.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Read Modelهای مرکزی قابل بازسازی هستند.</li>
+</ul>
+<h3 id="عملیات-و-reliability">عملیات و Reliability</h3>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Health Check و Readiness تعریف شده اند.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Metrics در سطح Cell جمع آوری می شوند.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Log و Trace دارای Cell ID هستند.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Canary Deployment وجود دارد.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Rollback آزمایش شده است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> RTO و RPO تعیین شده اند.</li>
+<li class="task-list-item"><input type="checkbox" disabled> خرابی یک Cell در محیط آزمایشی شبیه سازی شده است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> خرابی Router و سرویس های مشترک نیز بررسی شده است.</li>
+</ul>
+<h3 id="امنیت">امنیت</h3>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Tenant از هویت معتبر استخراج می شود.</li>
+<li class="task-list-item"><input type="checkbox" disabled> دسترسی بین Cellها محدود است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Secretها مدیریت و Rotation می شوند.</li>
+<li class="task-list-item"><input type="checkbox" disabled> ارتباطات داخلی رمزنگاری شده اند.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Audit Log برای عملیات مدیریتی وجود دارد.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Quota و Rate Limit تعریف شده اند.</li>
+</ul>
+<h3 id="مقیاس-پذیری-1">مقیاس پذیری</h3>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> ظرفیت هر Cell قابل اندازه گیری است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Provisioning خودکار وجود دارد.</li>
+<li class="task-list-item"><input type="checkbox" disabled> Rebalancing Plan وجود دارد.</li>
+<li class="task-list-item"><input type="checkbox" disabled> انتقال Partition قابل Rollback است.</li>
+<li class="task-list-item"><input type="checkbox" disabled> هزینه عملیاتی هر Cell قابل مشاهده است.</li>
+</ul>
+<hr>
+<h2 id="18-منابع-مطالعاتی">18. منابع مطالعاتی</h2>
+<p>برای مطالعه عمیق تر، مستندات AWS منابع مرجع مناسبی درباره طراحی Cell،
+Routing، Control Plane، Cell Sizing، Migration و Observability ارائه می
+کنند.</p>
+<ol>
+<li>
+<p><strong>AWS - Guidance for Cell-Based Architecture on AWS</strong><br>
+<a href="https://docs.aws.amazon.com/solutions/cell-based-architecture-on-aws/">https://docs.aws.amazon.com/solutions/cell-based-architecture-on-aws/</a></p>
+</li>
+<li>
+<p><strong>AWS Well-Architected - Reducing the Scope of Impact with
+Cell-Based Architecture</strong><br>
+<a href="https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/what-is-a-cell-based-architecture.html">https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/what-is-a-cell-based-architecture.html</a></p>
+</li>
+<li>
+<p><strong>AWS Well-Architected - Cell Design</strong><br>
+<a href="https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/cell-design.html">https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/cell-design.html</a></p>
+</li>
+<li>
+<p><strong>AWS Well-Architected - Cell Routing</strong><br>
+<a href="https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/cell-routing.html">https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/cell-routing.html</a></p>
+</li>
+<li>
+<p><strong>AWS Prescriptive Guidance - Serverless Cell Router</strong><br>
+<a href="https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/serverless-cell-router-architecture.html">https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/serverless-cell-router-architecture.html</a></p>
+</li>
+<li>
+<p><strong>AWS - Tenant Routing Strategies for SaaS Applications</strong><br>
+<a href="https://aws.amazon.com/blogs/networking-and-content-delivery/tenant-routing-strategies-for-saas-applications-on-aws/">https://aws.amazon.com/blogs/networking-and-content-delivery/tenant-routing-strategies-for-saas-applications-on-aws/</a></p>
+</li>
+</ol>
+<hr>
+<h2 id="جمع-بندی-نهایی">جمع بندی نهایی</h2>
+<p>Cell-Based Architecture روشی برای تقسیم یک Workload بزرگ به واحدهای
+مستقل و قابل تکرار است. ارزش اصلی آن فقط افزایش تعداد سرورها یا تقسیم
+Database نیست؛ بلکه ساخت مرزهای خرابی مشخص، محدود کردن اثر تغییرات و
+فراهم کردن امکان توسعه تدریجی ظرفیت است.</p>
+<p>چند اصل را باید همیشه به خاطر داشت:</p>
+<ol>
+<li>هر Cell باید تا حد ممکن برای پردازش Workload خودش مستقل باشد.</li>
+<li>Router باید ساده، سریع و Highly Available باشد.</li>
+<li>Control Plane باید از پردازش عادی کاربران جدا بماند.</li>
+<li>وابستگی های مشترک می توانند مزیت Isolation را از بین ببرند.</li>
+<li>انتقال کاربران و داده ها نیازمند فرایند دقیق و قابل Rollback است.</li>
+<li>Deployment باید مرحله ای باشد، نه همزمان برای همه Cellها.</li>
+<li>Cell-Based Architecture جایگزین Microservices نیست و می تواند درون
+هر Cell از Microservices استفاده کند.</li>
+<li>این معماری برای همه پروژه ها لازم نیست؛ پیچیدگی آن باید با نیاز
+واقعی سیستم توجیه شود.</li>
+</ol>
+<p>یک مسیر تکاملی متداول می تواند چنین باشد:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Modular Monolith</span></span>
+<span class="line"><span>       |</span></span>
+<span class="line"><span>       v</span></span>
+<span class="line"><span>Clear Domain Boundaries</span></span>
+<span class="line"><span>       |</span></span>
+<span class="line"><span>       v</span></span>
+<span class="line"><span>Independent Workers</span></span>
+<span class="line"><span>       |</span></span>
+<span class="line"><span>       v</span></span>
+<span class="line"><span>Event-Driven Integration</span></span>
+<span class="line"><span>       |</span></span>
+<span class="line"><span>       v</span></span>
+<span class="line"><span>Cell Registry + Cell Router</span></span>
+<span class="line"><span>       |</span></span>
+<span class="line"><span>       v</span></span>
+<span class="line"><span>Multi-Cell Architecture</span></span></code></pre>
+<p><strong>اصل نهایی:</strong> قبل از افزودن Cellهای بیشتر، ابتدا مرزهای داده، مسئولیت
+ها، خرابی ها و عملیات را درست تعریف کنید. تعداد Cellها به تنهایی نشانه
+بلوغ معماری نیست.</p>
+</div></article></main><footer data-astro-cid-jo6i4kqk>&copy; تمامی حقوق این وب سایت متعلق به فرید کرمی می باشد.<br data-astro-cid-jo6i4kqk>2026<div class="social-links" data-astro-cid-jo6i4kqk><a href="https://www.linkedin.com/in/faridkarami" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Follow me on Linkedin</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://x.com/faridkaramio" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Follow me on X</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a><a href="https://www.facebook.com/faridkaramio" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Follow me on Facebook</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a><a href="https://www.instagram.com/faridkaramio" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Follow me on Instagram</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a><a href="https://t.me/faridkaramio" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Follow me on Telegram</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg></a><a href="https://github.com/faridkarami" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Go to my GitHub repo</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><a href="https://www.npmjs.com/~faridkarami" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Go to my NPM page</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-hexagon"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg></a><a href="https://www.youtube.com/@faridkaramio" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Watch my channel on Youtube</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a><a href="https://www.aparat.com/faridkaramio" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>Watch my channel on Aparat</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-film"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M7 3v18"></path><path d="M3 7.5h4"></path><path d="M3 12h18"></path><path d="M3 16.5h4"></path><path d="M17 3v18"></path><path d="M17 7.5h4"></path><path d="M17 16.5h4"></path></svg></a><a href="/rss.xml" target="_blank" data-astro-cid-jo6i4kqk><span class="sr-only" data-astro-cid-jo6i4kqk>RSS Feed</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="30" height="30" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-jo6i4kqk="true" class="lucide lucide-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></div><div class="text-container" data-astro-cid-6bctqxxv><span class="letter" data-astro-cid-6bctqxxv>F</span><span class="letter" data-astro-cid-6bctqxxv>a</span><span class="letter" data-astro-cid-6bctqxxv>r</span><span class="letter" data-astro-cid-6bctqxxv>i</span><span class="letter" data-astro-cid-6bctqxxv>d</span><span class="letter" style="width: 10px;" data-astro-cid-6bctqxxv></span><span class="letter" data-astro-cid-6bctqxxv>K</span><span class="letter" data-astro-cid-6bctqxxv>a</span><span class="letter" data-astro-cid-6bctqxxv>r</span><span class="letter" data-astro-cid-6bctqxxv>a</span><span class="letter" data-astro-cid-6bctqxxv>m</span><span class="letter" data-astro-cid-6bctqxxv>i</span></div></footer></body></html>
